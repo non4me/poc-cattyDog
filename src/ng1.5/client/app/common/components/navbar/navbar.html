@@ -1,0 +1,27 @@
+<div class='container'>
+  <nav>
+    <div class="navbar main-nav">
+      <ul class="nav navbar-nav">
+        <li ng-repeat="pill in vm.navPills"
+            ui-sref-active="active"
+            ng-if="vm.isAllowed(pill.id)">
+          <a ui-sref="{{::pill.id}}">{{::pill.label }}</a>
+        </li>
+      </ul>
+      <div class="navbar-right">
+        <QUICK-SEARCH></QUICK-SEARCH>
+      </div>
+    </div>
+
+    <div class="navbar sub-nav">
+      <div class="navbar-right">
+        <div class='logged-user' ng-hide="vm.data.name==null">
+          <span class="icon-user" aria-hidden="true"></span>{{::vm.data.name}} ({{::vm.data.login}})
+          <div class="version">
+            v{{::vm.data.version}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,91 @@
+nav{
+    &.navbar{
+        margin-bottom: 30px;
+    }
+}
+
+.navbar {
+    background-color: @header-bg-color;
+    color: @text-blue-color;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav {
+    .border-radius(0);
+    height: @main-nav-height;
+    min-height: @main-nav-height;
+    & > ul {
+        clear: both;
+        & > li {
+            width: @main-nav-li-width;
+            text-align: center;
+            padding: 0;
+            text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.647);
+
+            > a.disabled {
+                opacity: 0.3;
+                cursor: default;
+            }
+        }
+        & > li.active {
+            & > a {
+                background: @header-active-bg-color;
+                color: @text-negative-color;
+                text-shadow: none;
+            }
+        }
+        & > li:hover:not(.active) {
+            & > a:not(.disabled) {
+                color: @text-negative-color;
+                background: @btn-hover-color;
+                text-shadow: none;
+            }
+        }
+    }
+}
+.main-nav &>ul &>li &>a,.main-nav &>ul &>li:not(.active) &>a:focus:not(.disabled) {
+    color: @text-blue-color;
+    background-color: @header-bg-color;
+    font-size: 17px;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sub-nav {
+    .border-radius(0);
+    height: @sub-nav-height;
+    min-height: @sub-nav-height;
+    background-color: @sub-header-bg-color;
+    & > ul {
+        clear: both;
+        & > li {
+            padding-bottom: 0px;
+            & > a {
+                color: @text-negative-color;
+                font-size: 15px;
+                text-decoration: none;
+                padding-bottom: 10px;
+                padding-top: 8px;
+
+            }
+            &.active {
+                & > a {
+                    font-weight: bold;
+                    color: @text-negative-color;
+                }
+            }
+            &:hover, &:focus{
+                & > a{
+                    color: @text-negative-color;
+                    background-color: transparent;
+                    background: url("@{images-path}@{navigation-active-arrow}") no-repeat bottom;  
+                }
+            }
+        }
+    }
+}
+
+.navbar-right{
+    margin-right: 10px;
+}

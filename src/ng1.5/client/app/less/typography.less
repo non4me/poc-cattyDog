@@ -1,0 +1,71 @@
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+    cursor: pointer;
+}
+h1 {
+    font-size: 43px;
+    font-weight: 100;
+    color: @text-blue-color;
+}
+h2 {
+    font-weight: 400;
+    color: @text-blue-color;
+    font-size: 34px;
+    line-height: 40px;
+}
+h3 {
+    font-weight: 400;
+    color: @text-blue-color;
+    font-size: 20px;
+}
+h4 {
+    font-size: 17px;
+    color: @text-blue-color;
+    font-weight: 700;
+}
+h5 {
+    font-size: 17px;
+    color: @text-black-color;
+    font-weight: 700;
+}
+h6 {
+    font-size: 17px;
+    color: @text-blue-color;
+    font-weight: 400;
+}
+strong {
+    color: @text-bold-color;
+}
+
+.page-header{
+    padding: 0 15px 5px 15px;
+    margin: 0;
+    border: none;
+    h1{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 16px;
+    }
+}
+.block-header {
+    padding: 15px 15px 15px 15px;
+    &-top{
+        padding: 0 15px 15px 15px;
+
+    }
+}
+.link-client, .link-signal{
+    text-decoration: underline;
+    color: @text-bold-color;
+    &:hover{
+        text-decoration: underline;
+        color: @text-bold-color;
+
+    }
+}
+.text-blue{
+    color: @text-blue-color !important;
+}

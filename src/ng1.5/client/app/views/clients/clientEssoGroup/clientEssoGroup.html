@@ -1,0 +1,110 @@
+<div class="container" role="main">
+  <alerts></alerts>
+
+  <div class="row">
+    <div class="client-info block-header-top">
+      <h3 class="name inline-block">{{vm.data.name}}</h3>
+      <button class="btn btn-sm btn-white" open-deep-link="{{::vm.data._links.deeplinkDmx.href}}">DMX
+      </button>
+    </div>
+  </div>
+  <ul class="nav nav-tabs ">
+    <li class="active"><a data-toggle="tab">Detail skupiny</a></li>
+  </ul>
+  <div id="tab-content-wrapper">
+    <div class="tab-content">
+
+      <div class="tab-pane in active row">
+        <div class="col-xs-6">
+          <table class="table table-transparent table-sm table-striped-cols table-no-header">
+            <thead>
+            <tr>
+              <th class="col-xs-5"></th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>CLUID</td>
+              <td>{{(vm.data.cluid) ||'-'}}</td>
+
+            </tr>
+            <tr>
+              <td>Jméno gestora</td>
+              <td ng-if="vm.data.gestor.surname">{{vm.data.gestor.surname}} {{vm.data.gestor.firstname}}</td>
+              <td ng-if="!vm.data.gestor.surname">-</td>
+            </tr>
+            <tr>
+              <td>Obchodní místo</td>
+              <td>{{(vm.data.businessTeam.rkcOrgUnit.displayValue) ||'-'}}</td>
+
+            </tr>
+            <tr>
+              <td>Rating</td>
+              <td>{{(vm.data.clientRating.rating.displayValue) ||'-'}}</td>
+
+            </tr>
+            <tr>
+              <td>Datum ratingu</td>
+              <td>{{(vm.data.clientRating.ratingDate | ewsDate) ||'-'}}</td>
+
+            </tr>
+            <tr>
+              <td>Datum příští revize</td>
+              <td>{{(vm.data.financialProfile.nextReviewDate | ewsDate) ||'-'}}</td>
+
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-6">
+          <table class="table table-transparent table-sm table-striped-cols-right table-no-header">
+            <thead>
+            <tr>
+              <th class="col-xs-7"></th>
+              <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+
+              <td>
+                Aktuální čerpání ze schválené expozice ESSO <br>(CZK)
+                (ČS Group)
+              </td>
+              <td>{{(vm.data.financialProfile.limitExpositionCurrentExtraction | ewsCurrency: "") ||'-'}}</td>
+            </tr>
+            <tr>
+
+              <td>Celková schválená expozice ESSO <br>(CZK) (ČS Group)</td>
+              <td>{{(vm.data.financialProfile.limitExpositionApprovedCzk | ewsCurrency: "") ||'-'}}</td>
+            </tr>
+            <tr>
+
+              <td>Celková schválená expozice ESSO <br>(EUR) (ČS Group)</td>
+              <td>{{(vm.data.financialProfile.limitExpositionApprovedEur | ewsCurrency: "") ||'-'}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="block-header">
+          <h3>Seznam klientů</h3>
+        </div>
+        <div class="col-xs-12">
+          <CMT-TABLE ng-hide="vm.data.members == null"
+                     hide-filter = "true"
+                     data-table-header="vm.tableHeader"
+                     table-class="table-bordered"
+                     data-data="vm.data.members"
+                     table-empty="Seznam neobsahuje žádnou položku.">
+          </CMT-TABLE>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+</div>
+</div>

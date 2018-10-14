@@ -1,0 +1,10 @@
+<div class="text-center">
+  <!--// TODO: Discuss about move _link info to record-->
+  <button ng-repeat="btn in vm.column.buttons"
+          ng-if="vm.record._links[btn.linkMap]"
+          ng-click="ajaxPost(vm.record._links[btn.linkMap])"
+          class="btn btn-default btn-sm"
+          ng-class="btn.cellClass">
+    {{::btn.label}}
+  </button>
+</div>

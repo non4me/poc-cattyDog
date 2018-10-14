@@ -1,0 +1,64 @@
+<div class="col-xs-6">
+    <table class="table table-transparent table-sm table-striped-cols-right">
+        <tbody>
+        <tr>
+            <td>Částka po splatnosti (CZK) *</td>
+            <td tooltip-error="pastDueAmountOtherBankCZK">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  ng-model="vm.model.pastDueAmountOtherBankCZK"
+                                  type="inputCurrency"
+                                  name="pastDueAmountOtherBankCZK"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        <tr>
+            <td>Částka po splatnosti (EUR)</td>
+            <td>
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  ng-if="vm.formControlMode == 'edit' || vm.model.pastDueAmountOtherBankEUR != undefined"
+                                  ng-model="vm.model.pastDueAmountOtherBankEUR"
+                                  type="inputCurrency"
+                                  name="pastDueAmountOtherBankEUR"></EWS-FORM-CONTROL>
+                <span ng-if="vm.formControlMode == 'view' && !vm.model.pastDueAmountOtherBankEUR">-</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Platnost *</td>
+            <td tooltip-error="pastDueDateOtherBank">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  ng-model="vm.model.pastDueDateOtherBank"
+                                  type="datepicker"
+                                  name="pastDueDateOtherBank"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="col-xs-6">
+    <table class="table table-transparent table-sm table-striped-cols-right">
+        <tbody>
+        <tr>
+            <td>Počet dnů po splatnosti *</td>
+            <td tooltip-error="daysPastDueOtherBank">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  ng-model="vm.model.daysPastDueOtherBank"
+                                  type="input"
+                                  name="daysPastDueOtherBank"
+                                  require="true"></EWS-FORM-CONTROL>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Počet bank klienta *</td>
+            <td tooltip-error="numberOfClaimingBanks">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  ng-model="vm.model.numberOfClaimingBanks"
+                                  type="input"
+                                  name="numberOfClaimingBanks"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

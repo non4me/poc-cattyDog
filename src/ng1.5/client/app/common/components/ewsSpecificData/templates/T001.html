@@ -1,0 +1,76 @@
+<div class="col-xs-6">
+  <table class="table table-transparent table-sm table-striped-cols">
+    <tbody>
+    <tr>
+      <td>Aktuální rating *</td>
+
+      <td tooltip-error="clientRating">
+        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                          ng-model="vm.model.clientRating"
+                          type="select"
+                          name="clientRating"
+                          options="vm.codebooks.CB_FscsClientRating"
+                          ng-attr-require="true"
+                          filter-by="{'organization':true}">
+        </EWS-FORM-CONTROL>
+
+      </td>
+    </tr>
+    <tr>
+      <td>Datum aktuálního ratingu *</td>
+      <td tooltip-error="currentRatingDate">
+        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                          name="currentRatingDate"
+                          ng-model="vm.model.currentRatingDate"
+                          value=""
+                          type="datepicker"
+                          require="true">
+        </EWS-FORM-CONTROL>
+      </td>
+    </tr>
+    <!-- not in JR2016 <tr>
+          <td>Ratingová metoda</td>
+
+          <td>
+              <ews-form-control mode="formControlMode" name="ratingMethod" ng-model="model.ratingMethod"
+                                type="input"/>
+          </td>
+      </tr>-->
+    </tbody>
+  </table>
+</div>
+<div class="col-xs-6">
+  <table class="table table-transparent table-sm table-striped-cols">
+    <tbody>
+    <tr>
+      <td>Předchozí rating *</td>
+
+      <td tooltip-error="previousRating">
+        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                          name="previousRating"
+                          ng-model="vm.model.previousRating"
+                          type="select"
+                          options="vm.codebooks.CB_FscsClientRating"
+                          require="true"
+                          filter-by="{'organization':true}">
+        </EWS-FORM-CONTROL>
+      </td>
+    </tr>
+    <tr>
+      <td>Datum schv. předchozího ratingu *</td>
+
+      <td tooltip-error="previousRatingDate">
+
+        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                          name="previousRatingDate"
+                          ng-model="vm.model.previousRatingDate"
+                          type="datepicker"
+                          require="true">
+        </EWS-FORM-CONTROL>
+
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

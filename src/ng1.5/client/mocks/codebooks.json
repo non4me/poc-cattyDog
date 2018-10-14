@@ -1,0 +1,3876 @@
+{
+  "CB_EarlyWarningSignalType" : [ {
+    "code" : "T001",
+    "displayValue" : "Rating 7 nebo zhoršení IR",
+    "entity" : "ClientRating",
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T002",
+    "displayValue" : "Polhůtní pohledávky",
+    "entity" : "PastDueFacts",
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T003",
+    "displayValue" : "Polhůtní závazky u jiné banky",
+    "entity" : "PastDueFactsExternal",
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T004",
+    "displayValue" : "Pokles kreditních obratů na účtech klienta",
+    "entity" : "TurnoverFacts",
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T005",
+    "displayValue" : "Exekuce nebo blokace na účtech",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T006",
+    "displayValue" : "Uplatněné bankovní garance",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T007",
+    "displayValue" : "Neplnění smluvních podmínek",
+    "entity" : "ContractualCondition",
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T008",
+    "displayValue" : "Negativní informace",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T009",
+    "displayValue" : "Insolvence klienta",
+    "entity" : "Insolvenci",
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T010",
+    "displayValue" : "Využívání KTK",
+    "entity" : "OverdraftFacts",
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T011",
+    "displayValue" : "Změny ve statusu klienta",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T012",
+    "displayValue" : "Insolvence ve skupině klienta",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T013",
+    "displayValue" : "Interní varování (EMUS)",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T014",
+    "displayValue" : "Plnění podmínek BB",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T015",
+    "displayValue" : "Neplacení soc. a zdrav. pojištění",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  }, {
+    "code" : "T016",
+    "displayValue" : "Změny vypočteného a fin. ratingu",
+    "entity" : null,
+    "name" : "CB_EarlyWarningSignalType"
+  } ],
+  "CB_EarlyWarningSignalStatus" : [ {
+    "code" : "DUPLICITY",
+    "displayValue" : "Duplicitní",
+    "description" : "Signál byl vyhodnocen jako (technicky) duplicitní = je uložen v DB EWS, ale neprobíhá nad ním žádné další vyhodnocování, nijak se s ním dál nepracuje.",
+    "finalni" : true,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "FILED",
+    "displayValue" : "Evidovaný",
+    "description" : "Signál je zaevidován ke klientovi, ale nespouští další proces.",
+    "finalni" : true,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "CAPTURED",
+    "displayValue" : "Zachycený",
+    "description" : "Signál je zachycený a předaný na řešení uživateli.",
+    "finalni" : false,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "ASSESSED",
+    "displayValue" : "Ohodnocený",
+    "description" : "Signál je ohodnocený RSM a pokračuje dále na validaci.",
+    "finalni" : false,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "VALIDATED",
+    "displayValue" : "Validovaný",
+    "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+    "finalni" : false,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "INVALIDATED",
+    "displayValue" : "Nevalidní",
+    "description" : "Signál je uživatelsky prohlášen za nevalidní (např. business duplicita). Dále v procesu nepokračuje.",
+    "finalni" : true,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "CLASSIFIED",
+    "displayValue" : "Klasifikovaný",
+    "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+    "finalni" : false,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "OK_CLOSED",
+    "displayValue" : "Úspěšně uzavřený",
+    "description" : "Signál byl úspěšně uzavřen.",
+    "finalni" : true,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "NOK_CLOSED",
+    "displayValue" : "Neúspěšně uzavřený",
+    "description" : "Signál byl neúspěšně uzavřen.",
+    "finalni" : true,
+    "name" : "CB_EarlyWarningSignalStatus"
+  }, {
+    "code" : "DELETED",
+    "displayValue" : "Smazaný",
+    "description" : "Signál byl smazán.",
+    "finalni" : true,
+    "name" : "CB_EarlyWarningSignalStatus"
+  } ],
+  "CB_TaskStatus" : [ {
+    "code" : "0",
+    "displayValue" : "created",
+    "ewsCmtName" : null,
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "1",
+    "displayValue" : "ready",
+    "ewsCmtName" : "Vytvořený",
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "2",
+    "displayValue" : "reserved",
+    "ewsCmtName" : "Čeká na zpracování",
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "3",
+    "displayValue" : "in progress",
+    "ewsCmtName" : "Ve zpracování",
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "4",
+    "displayValue" : "completed",
+    "ewsCmtName" : "Ukončený",
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "5",
+    "displayValue" : "obsolete",
+    "ewsCmtName" : null,
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "6",
+    "displayValue" : "error",
+    "ewsCmtName" : null,
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "7",
+    "displayValue" : "failed",
+    "ewsCmtName" : null,
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "8",
+    "displayValue" : "exited",
+    "ewsCmtName" : null,
+    "name" : "CB_TaskStatus"
+  }, {
+    "code" : "9",
+    "displayValue" : "suspended",
+    "ewsCmtName" : null,
+    "name" : "CB_TaskStatus"
+  } ],
+  "CB_EwsDetectionMethod" : [ {
+    "code" : "AUTO",
+    "displayValue" : "Automaticky",
+    "name" : "CB_EwsDetectionMethod"
+  }, {
+    "code" : "MANUAL",
+    "displayValue" : "Manuálně",
+    "name" : "CB_EwsDetectionMethod"
+  } ],
+  "CB_TaskType" : [ {
+    "code" : "AcceptEvaluation",
+    "displayValue" : "Akceptace ocenění dodaného znalcem",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "ConfirmCancelationOfHousingNeeds",
+    "displayValue" : "Potvrzení o ukončení bydlení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "ConstructHousingNeedsCase",
+    "displayValue" : "Konstrukce řešení potřeby bydlení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "CreateRealEstateEvaluation",
+    "displayValue" : "Konstrukce ocenění zajištění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "DecideDuplicateHousingNeeds",
+    "displayValue" : "Rozhodnutí o založení nové žádosti",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "DecideHousingNeedsCancelation",
+    "displayValue" : "Rozhodnutí o ukončení bydlení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "DisplaySupervisionResult",
+    "displayValue" : "Zobrazení výsledku supervize ocenění znalce",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "EditOwnershipCertificateTask",
+    "displayValue" : "Editace listu vlastnictví",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT003",
+    "displayValue" : "Anonymní simulace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT005_ConfigureHousingNeeds",
+    "displayValue" : "Tvorba nabídky Hypotéky ČS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT008_ContactClientAndAgreeMeeting",
+    "displayValue" : "Kontaktování klienta a smluvení schůzky",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT013_IdealMortgageConstruction",
+    "displayValue" : "Tvorba návrhu Hypotéky ČS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT023_LimitOwnershipCertificateTask",
+    "displayValue" : "Omezení listu vlastnictví",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT026_EnterEvaluationSupervision",
+    "displayValue" : "Vložení ocenění pro supervizi",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT027_ReworkEvaluation",
+    "displayValue" : "Doplnění ocenění pro supervizi",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT029_DisplaySupervisionResult",
+    "displayValue" : "Zobrazení výsledku supervize původního ocenění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT113_IdealMortgageReconstruction",
+    "displayValue" : "Přepracování návrhu Hypotéky ČS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT116_CreateIndicativeRealEstateEvaluation",
+    "displayValue" : "Konstrukce Indikativního ocenění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT118_ReworkIndicativeRealEstateEvaluation",
+    "displayValue" : "Doplnění Indikativního ocenění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT120_DisplayIndicativeEvaluationResult",
+    "displayValue" : "Zobrazení  výsledku Indikativního ocenění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT130_CheckCaseData",
+    "displayValue" : "Kontrola dat",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT131_TranscribeAndSummarizeCaseData",
+    "displayValue" : "Sběr dat a sumarizace případu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT132_ReCheckCaseData",
+    "displayValue" : "Opakovaná kontrola dat",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT133_ReviewCaseData",
+    "displayValue" : "Revize dat a sumarizace případu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT140_DecideRevocation",
+    "displayValue" : "Rozhodnutí navrhovatele o revokaci",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT141_DecideRejectedRevocation",
+    "displayValue" : "Rozhodnutí o revokaci zamítavého stanoviska",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT142_Consultation",
+    "displayValue" : "Předkonzultace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT143_Approval",
+    "displayValue" : "Schvalování Hypo",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT144_ReApproval",
+    "displayValue" : "Přeschválení po rozhodnutí",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT145_Revocation",
+    "displayValue" : "Revokace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT146_NoDecisionApproval",
+    "displayValue" : "Přeschválení bez rozhodnutí",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT151_CheckDocumentsByDocumentarist",
+    "displayValue" : "Kontrola dokumentace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT152_CorrectDocumentsByDocumentarist",
+    "displayValue" : "Oprava dokumentace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT153_CompletionCaseFO",
+    "displayValue" : "Doplnění informací o případu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT154_CheckDocumentsByLCD",
+    "displayValue" : "Zpracování dokumentace na právním oddělení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT160_ReworkCaseDecision",
+    "displayValue" : "Rozhodnutí o přepracování případu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT161_CheckAndSignDocumentation",
+    "displayValue" : "Podpis dokumentace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT162_AgreementHandover",
+    "displayValue" : "Převzetí a kontrola dokumentace, rozhodnutí o dalším postupu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT164_DocumentationReworkRequestDecision",
+    "displayValue" : "Rozhodnutí o úpravě dokumentace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT170_InsertAgreementPartiesManually",
+    "displayValue" : "Řešení chyby založení účastníků",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT171_InsertLoansManually",
+    "displayValue" : "Řešení chyby založení úvěru",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT172_InsertAdditionalInfoManually",
+    "displayValue" : "Řešení chyby založení dalších informací",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT173_InsertCollateralsManually",
+    "displayValue" : "Řešení chyby založení dozajištění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT174_ManualFinalization",
+    "displayValue" : "Manuální dozaložení úvěru",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT190_ConstructMortgageRework",
+    "displayValue" : "Úprava návrhu Hypotéky ČS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT191_TranscribeAndSummarizeCaseDataRework",
+    "displayValue" : "Úprava dat a sumarizace případu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "IdentifyAndVerifyClient",
+    "displayValue" : "Identifikace a ověření klienta",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "OnlineRealEstateEvaluation",
+    "displayValue" : "Online ocenění zajištění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "ReworkEvaluation",
+    "displayValue" : "Doplnění ocenění zajištění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "ScanningTask",
+    "displayValue" : "Skenování dokumentů",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "SearchEvaluation",
+    "displayValue" : "Vyhledání ocenění zajištění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "ServiceIdentifiedClient",
+    "displayValue" : "Obsluha klienta",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "SettleRealEstateEvaluationToll",
+    "displayValue" : "Úhrada poplatku za odhad",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "StateCancelationReasons",
+    "displayValue" : "Určení důvodů ukočení případu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_HT01_RequirementDefinition",
+    "displayValue" : "Definice požadavku",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_HT02_RequirementAddition",
+    "displayValue" : "Doplnění požadavku",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_HT03_RequirementProcessing",
+    "displayValue" : "Zpracování požadavku",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT900_HousingNeedsAPSCancelation",
+    "displayValue" : "Manuální storno žádosti v APS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "ESIG_HT001_ProcessESignature",
+    "displayValue" : "Manuální dokončení žádosti",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "ESIG_HT002_ProcessESignatureError",
+    "displayValue" : "Řešení chyby",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "ESIG_HT003_ProcessESignatureStorno",
+    "displayValue" : "Manuální storno",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT950_ProcessingOfFaultedCase",
+    "displayValue" : "Zpracování havarovaného případu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_HT04_RequirementClientContact",
+    "displayValue" : "Kontaktovat klienta",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT147_SimpleRefiApproval",
+    "displayValue" : "Schválení zjednodušeného refinancování",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT100_RequestDistribution",
+    "displayValue" : "Zatřídění požadavku",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT101_ProcessDistraintOrder",
+    "displayValue" : "Zpracování EP",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT102_ProcessBecomeLegallyEffective",
+    "displayValue" : "Zápis NPM",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT103_ProcessDistraintOrderAbortion",
+    "displayValue" : "Zpracování Zastavení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT104_ProcessOther",
+    "displayValue" : "Zpracování Ostatní",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT105_BlePayment",
+    "displayValue" : "Zpracování NPM",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT106_RequestHandover",
+    "displayValue" : "Předání či rozkopírování požadavku",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT111_GeneralAnswer",
+    "displayValue" : "Obecná odpověď",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT112_SetUpAnswer",
+    "displayValue" : "Příprava odpovědi",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT113_AnswerCorrection",
+    "displayValue" : "Oprava odpovědi",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT114_OperationalCheckStatement",
+    "displayValue" : "Provozní kontrola sdělení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT003_IdealMortgageOpportunityDefinition",
+    "displayValue" : "Definice příležitosti Hypoteční úvěr",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT004_ContactClientOpportunity",
+    "displayValue" : "Kontaktování klienta u příležitosti na HÚ",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT107_ProcessHandover",
+    "displayValue" : "Zpracování Převzetí",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_HT06_RequirementRequestOfCooperation",
+    "displayValue" : "Žádost o součinnost",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_HT05_RequirementControl",
+    "displayValue" : "Provozní kontrola",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT115_PartialRejectAnswer",
+    "displayValue" : "Příprava odpovědi - částečné odmítnutí",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT116_PartialRejectAnswerCorrection",
+    "displayValue" : "Oprava odpovědi - částečné odmítnutí",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT108_EboxRequestProcessing",
+    "displayValue" : "Zpracování požadavku v DS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT119_GeneralAnswerCorrection",
+    "displayValue" : "Oprava obecné odpovědi",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT117_RejectAnswer",
+    "displayValue" : "Příprava odpovědi - odmítnutí",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT118_RejectAnswerCorrection",
+    "displayValue" : "Oprava odpovědi - odmítnutí",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT201",
+    "displayValue" : "ESPIS MINIPROFIT",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT202",
+    "displayValue" : "ESPIS UFO",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT203",
+    "displayValue" : "ESPIS SPOROSERVIS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT204",
+    "displayValue" : "ESPIS AMHYPO",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT205",
+    "displayValue" : "ESPIS Bankovní záruky",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT206",
+    "displayValue" : "ESPIS Běžné účty",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT207",
+    "displayValue" : "ESPIS Cizoměnové účty",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT208",
+    "displayValue" : "ESPIS Ev. pohledávek",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT209",
+    "displayValue" : "ESPIS Hypotéky",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT210",
+    "displayValue" : "ESPIS Investice",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT211",
+    "displayValue" : "ESPIS Kartové účty",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT212",
+    "displayValue" : "ESPIS Karty debetní",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT213",
+    "displayValue" : "ESPIS Karty kreditní",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT214",
+    "displayValue" : "ESPIS Kontokorenty",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT215",
+    "displayValue" : "ESPIS MSE",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT216",
+    "displayValue" : "ESPIS Osobní a sporožirové účty",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT217",
+    "displayValue" : "ESPIS Ostatní pojištění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT218",
+    "displayValue" : "ESPIS Ostatní produkty",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT219",
+    "displayValue" : "ESPIS Ostatní úvěry",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT220",
+    "displayValue" : "ESPIS Penzijní zabezpečení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT221",
+    "displayValue" : "ESPIS Služby",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT222",
+    "displayValue" : "ESPIS Služby k produktu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT223",
+    "displayValue" : "ESPIS Spoření a spořící účty",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT224",
+    "displayValue" : "ESPIS Úvěry ze stavebního spoření",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT225",
+    "displayValue" : "ESPIS Vkladové účty",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT226",
+    "displayValue" : "ESPIS Elektronické bankovnictví",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT227",
+    "displayValue" : "ESPIS Úvěr SYM",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT228",
+    "displayValue" : "ESPIS Úvěrová linka",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT229",
+    "displayValue" : "ESPIS Stavební spoření",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT230",
+    "displayValue" : "ESPIS Překlenovací úvěr",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT231",
+    "displayValue" : "ESPIS Životní pojištění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT232",
+    "displayValue" : "ESPIS Platební karta",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT233",
+    "displayValue" : "ESPIS Platební účet sKarta",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT234",
+    "displayValue" : "ESPIS Klientská dokumentace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT235",
+    "displayValue" : "ESPIS Obchodní případ",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT236",
+    "displayValue" : "ESPIS Ostatní dokumentace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UNO_Espis_HT200",
+    "displayValue" : "ESPIS Karanténa",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT005_EPAK_ConfigureHousingNeeds",
+    "displayValue" : "Modelace Hypotéky ČS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT001_HUB_CheckDocumentsHT",
+    "displayValue" : "Změna kontaktních údajů - kontrola OP z IB",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT002_HUB_BackendErrorHT",
+    "displayValue" : "Změna kontaktních údajů - dokončení v systémech",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT003_HUB_ProcessErrorHT",
+    "displayValue" : "Spadlý proces",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "UniqueIdentificationClient",
+    "displayValue" : "Jednoznačná identifikace klienta",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT109_VoluntaryPayment",
+    "displayValue" : "Dobrovolná úhrada",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT120_DistraintDataManage",
+    "displayValue" : "Úprava exekučního případu",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT121_Replenishment",
+    "displayValue" : "Zpracování Doplacení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT122_EndOfWatching",
+    "displayValue" : "Zpracování Ukončení sledování",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT175_CollateralPropagationError",
+    "displayValue" : "Řešení chyby založení zajištění do Colmana",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT176_DocumentPropagationError",
+    "displayValue" : "Řešení chyby založení dokumentace do Colmana",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT006_ContactClientCRMOpportunity",
+    "displayValue" : "Kontaktování klienta u příležitosti na HÚ z CRM",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT007_ClientDataUpdate",
+    "displayValue" : "Aktualizace klientských dat",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT036_EditRealEstateEvaluation",
+    "displayValue" : "Editace ocenění zajištění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT136_EditIndicativeEvaluation",
+    "displayValue" : "Editace indikativního ocenění",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "CMT_Assess",
+    "displayValue" : "Ohodnocení",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "CMT_Validate",
+    "displayValue" : "Validace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "CMT_Classify",
+    "displayValue" : "Klasifikace",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "CMT_Comment",
+    "displayValue" : "Komentář",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "CMT_Appeal",
+    "displayValue" : "Vyjádření RSM k AP",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "CMT_Evaluate",
+    "displayValue" : "Vyhodnocení AP",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT213_OnlineMortgageConstruction",
+    "displayValue" : "Tvorba online návrhu Hypotéky ČS",
+    "name" : "CB_TaskType"
+  }, {
+    "code" : "HT005_OHYPO",
+    "displayValue" : "Web formulář online návrhu Hypotéky ČS",
+    "name" : "CB_TaskType"
+  } ],
+  "CB_AlertCategory" : [ {
+    "code" : "1",
+    "displayValue" : "Zánik klienta",
+    "name" : "CB_AlertCategory"
+  }, {
+    "code" : "2",
+    "displayValue" : "Varovný systém",
+    "name" : "CB_AlertCategory"
+  }, {
+    "code" : "3",
+    "displayValue" : "Kategorizace klientů AML",
+    "name" : "CB_AlertCategory"
+  }, {
+    "code" : "4",
+    "displayValue" : "Upozornění-EMUS",
+    "name" : "CB_AlertCategory"
+  }, {
+    "code" : "5",
+    "displayValue" : "Exekuce",
+    "name" : "CB_AlertCategory"
+  }, {
+    "code" : "6",
+    "displayValue" : "Žalovaný úvěr (1995-1998)",
+    "name" : "CB_AlertCategory"
+  }, {
+    "code" : "7",
+    "displayValue" : "Podání",
+    "name" : "CB_AlertCategory"
+  }, {
+    "code" : "8",
+    "displayValue" : "Odcházející klient",
+    "name" : "CB_AlertCategory"
+  }, {
+    "code" : "9",
+    "displayValue" : "Ostatní",
+    "name" : "CB_AlertCategory"
+  } ],
+  "CB_ClientAlertType" : [ {
+    "code" : "1",
+    "displayValue" : "Konkurz firmy",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "2",
+    "displayValue" : "Pravděpodobný konkurz firmy",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "3",
+    "displayValue" : "Informace o konkurzu",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "4",
+    "displayValue" : "Likvidace firmy",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "5",
+    "displayValue" : "Informace o likvidaci",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "6",
+    "displayValue" : "Ukončení konkurzu",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "7",
+    "displayValue" : "Ukončení likvidace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "8",
+    "displayValue" : "Klient zemřel",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "12",
+    "displayValue" : "Operační riziko",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "13",
+    "displayValue" : "Před nabytím právní moci",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "14",
+    "displayValue" : "Po nabytí právní moci",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "15",
+    "displayValue" : "Zastaveno",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "16",
+    "displayValue" : "Žalované ÚFO 1994-98",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "17",
+    "displayValue" : "Významné",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "18",
+    "displayValue" : "Dohoda o narovnání",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "19",
+    "displayValue" : "Expertní skupina",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "20",
+    "displayValue" : "Finanční arbitr",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "23",
+    "displayValue" : "Odpis pohledávek",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "24",
+    "displayValue" : "Bezpečnostní schránky",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "25",
+    "displayValue" : "Produktové informace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "26",
+    "displayValue" : "Odpis pohledávek - BBL",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "27",
+    "displayValue" : "Neurčeno",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "28",
+    "displayValue" : "B_bezpečnostní inspekce",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "29",
+    "displayValue" : "FA_duplicitní rozdíly",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "30",
+    "displayValue" : "FB_dif. v dotacích a odvodech",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "31",
+    "displayValue" : "FC_pokladní schodky",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "32",
+    "displayValue" : "FD_pokladní přebytky",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "33",
+    "displayValue" : "FE_ostatní nespecif. diference",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "34",
+    "displayValue" : "HA_výhr.ozn.,šíření pop.zprávy",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "35",
+    "displayValue" : "HB_tech.havárie,živel.pohromy",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "36",
+    "displayValue" : "HC_požáry",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "37",
+    "displayValue" : "J_podvodná jednání klientů",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "38",
+    "displayValue" : "LA_loupežná přepadení",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "39",
+    "displayValue" : "LB_krádeže vloupáním",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "40",
+    "displayValue" : "LC_krádeže prosté (odciz.maj.)",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "41",
+    "displayValue" : "LD_útoky na ATM,noční tr.apod.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "42",
+    "displayValue" : "LE_vydírání, teror, sabotáž",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "43",
+    "displayValue" : "LF_os.ztr,pošk.maj.nad50tis.Kč",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "44",
+    "displayValue" : "LG_podezřelé chování klientů",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "45",
+    "displayValue" : "N_nepovolené manipulace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "46",
+    "displayValue" : "Na_Kriminální jednání zaměstn.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "47",
+    "displayValue" : "Nb_Neautoriz.akt,přestupky zam",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "48",
+    "displayValue" : "Nc_Pracovněprávní probl./přest",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "49",
+    "displayValue" : "Ra_Chybné platby a vypořádání",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "50",
+    "displayValue" : "Rb_Nedost.ve sml.dok.s klienty",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "51",
+    "displayValue" : "Rc_Chyby v ocenění,přípr.prod.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "52",
+    "displayValue" : "Rd_Nedostatky v ext.výkaznictv",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "53",
+    "displayValue" : "Re_Chybné řízení projektů",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "54",
+    "displayValue" : "Rf_Nedostatky v poradenství",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "55",
+    "displayValue" : "Rg_Nesprávné obch.,tržní prakt",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "56",
+    "displayValue" : "Rh_Poruš. zodpovědnosti banky",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "57",
+    "displayValue" : "Ri_Nedost.při spr.účtů/majetku",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "58",
+    "displayValue" : "Rj_Nedost.v posouzení klienta",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "59",
+    "displayValue" : "Sa_Selhání systémů",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "60",
+    "displayValue" : "Sb_Narušení bezpeč.systémů",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "61",
+    "displayValue" : "Va_Podezření na podvod.jednání",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "62",
+    "displayValue" : "Vb_Kriminální aktivity",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "63",
+    "displayValue" : "Vc_Selhání obch.protistrany",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "64",
+    "displayValue" : "Vd_Outsourcing,dodavat.riziko",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "65",
+    "displayValue" : "Ve_Tech.havárie,živel.pohromy",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "66",
+    "displayValue" : "Vf_Bezpečnost IT",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "67",
+    "displayValue" : "YA_vloupání do služ. vozidel",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "68",
+    "displayValue" : "YB_dopravní nehody se zraněním",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "69",
+    "displayValue" : "YC_žád.st.org.,ČNB aj.st.inst.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "70",
+    "displayValue" : "YD_ostatní nespecifikované MU",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "73",
+    "displayValue" : "RizikoA3_Neprůhl.vlast.strukt.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "74",
+    "displayValue" : "RizikoA4_Nejasný původ peněz",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "75",
+    "displayValue" : "RizikoA5_Zastřené jednání",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "76",
+    "displayValue" : "RizikoA6_Riziko praní peněz",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "81",
+    "displayValue" : "Postoupené pohledávky",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "82",
+    "displayValue" : "Upozornění SPOROSERVIS",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "83",
+    "displayValue" : "Nestandardní událost",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "84",
+    "displayValue" : "Odstoupení od smlouvy",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "88",
+    "displayValue" : "Insolvenční řízení",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "89",
+    "displayValue" : "EK_Ext_partner-Kreditní riziko",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "90",
+    "displayValue" : "EO_Ext_partner-Operační riziko",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "91",
+    "displayValue" : "Nepřijatelný-sankcionovaný",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "92",
+    "displayValue" : "Nepřijatelný-označen v EBG",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "93",
+    "displayValue" : "Nepřijatelný-označen v ČS",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "94",
+    "displayValue" : "AML riziko",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "95",
+    "displayValue" : "AML riziko - úvěr",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "96",
+    "displayValue" : "Neprůhledná vlastnick.strukt.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "97",
+    "displayValue" : "Nejasný původ fin.prostředků",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "98",
+    "displayValue" : "Zastřené jednání",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "99",
+    "displayValue" : "Politicky exponovaný subjekt",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "104",
+    "displayValue" : "Země s vys.rizikem praní peněz",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "106",
+    "displayValue" : "Riziko AML",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "107",
+    "displayValue" : "Konkurz FO-občana",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "108",
+    "displayValue" : "EZ_Ext_partner-Odhadce",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "109",
+    "displayValue" : "Předběžné opatření",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "110",
+    "displayValue" : "Závazkový úvěr",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "111",
+    "displayValue" : "Evidenční pohledávka",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "113",
+    "displayValue" : "Do_Dokumentace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "114",
+    "displayValue" : "Zamítnutá restrukturalizace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "115",
+    "displayValue" : "Klient s omezenou svéprávností",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "116",
+    "displayValue" : "Průkazy totožnosti",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "117",
+    "displayValue" : "Zákonný zástupce",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "118",
+    "displayValue" : "EP_Ext_partner_Porušení sml.p.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "119",
+    "displayValue" : "Konsolidace úvěrů",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "120",
+    "displayValue" : "Schválená restrukturalizace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "121",
+    "displayValue" : "Úprava splátkového kalendáře",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "122",
+    "displayValue" : "Externí konsolidace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "123",
+    "displayValue" : "Neidentifikován osobně",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "124",
+    "displayValue" : "Bez likvidace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "125",
+    "displayValue" : "Odpis pohledávek - do limitu",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "126",
+    "displayValue" : "Busy banking",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "127",
+    "displayValue" : "1. Průběh",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "128",
+    "displayValue" : "2. Ukončeno",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "129",
+    "displayValue" : "Vymáhání do 90 dnů po splat.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "130",
+    "displayValue" : "Deaktivace kreditní linky",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "131",
+    "displayValue" : "Neúvěrová pohledávka",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "132",
+    "displayValue" : "Správce dědictví/Vykonavatel",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "133",
+    "displayValue" : "Aktivní nabídka restruktur.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "134",
+    "displayValue" : "sKarta",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "135",
+    "displayValue" : "Vyplacený zůst. zruš. účtu",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "136",
+    "displayValue" : "HYPO nesplněné podm. a povin.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1091",
+    "displayValue" : "PR_Nepřijatelný-sankcionovaný",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1092",
+    "displayValue" : "PR_Nepřijatelný-označen v EBG",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1093",
+    "displayValue" : "PR_Nepřijatelný-označen v ČS",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1099",
+    "displayValue" : "PR_Politicky exponovaný subj.",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1100",
+    "displayValue" : "PR_Mezinárodní embargo",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1101",
+    "displayValue" : "PR_Země NCCT/nedost.opatř. AML",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1102",
+    "displayValue" : "PR_Offshore nebo daňový ráj",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1103",
+    "displayValue" : "PR_Drogová země",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1104",
+    "displayValue" : "PR_Země s vys.riz. praní peněz",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1105",
+    "displayValue" : "Předmět obchodu z rizik. země",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1106",
+    "displayValue" : "Vlast. struktura-řídící osoba",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1107",
+    "displayValue" : "Odmítnutá restrukturalizace",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1108",
+    "displayValue" : "Riziko AML_země obch./předmětu",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1112",
+    "displayValue" : "PR_Podpora terorismu",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1113",
+    "displayValue" : "Forbearance",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1114",
+    "displayValue" : "Schválená restrukturalizace/FB",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "1115",
+    "displayValue" : "ErsteInternal Blacklist",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "N/A",
+    "displayValue" : "Obecná poznámka",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "XER",
+    "displayValue" : "Obecná poznámka",
+    "name" : "CB_ClientAlertType"
+  }, {
+    "code" : "XNA",
+    "displayValue" : "Obecná poznámka",
+    "name" : "CB_ClientAlertType"
+  } ],
+  "CB_EarlyWarningSignalSubType" : [ {
+    "code" : "T001S01",
+    "displayValue" : "Zhošení ratingu o min 3 notches na 5a nebo horší",
+    "signalTypeCode" : "T001",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T001S02",
+    "displayValue" : "Zlepšení ratingu na 7",
+    "signalTypeCode" : "T001",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T001S03",
+    "displayValue" : "Zhoršení ratingu na 7",
+    "signalTypeCode" : "T001",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T002S01",
+    "displayValue" : "Polhůtní pohledávky do 30 dnů",
+    "signalTypeCode" : "T002",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T002S02",
+    "displayValue" : "Polhůtní pohledávky 30 a více dnů",
+    "signalTypeCode" : "T002",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T003S01",
+    "displayValue" : "Polhůtní závazky u jiné banky, DPD>10",
+    "signalTypeCode" : "T003",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T003S02",
+    "displayValue" : "Polhůtní závazky u jiné banky, DPD<10",
+    "signalTypeCode" : "T003",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T004S01",
+    "displayValue" : "Pokles kreditních obratů na účtech klienta <40%",
+    "signalTypeCode" : "T004",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T004S02",
+    "displayValue" : "Pokles kreditních obratů na účtech klienta >40%",
+    "signalTypeCode" : "T004",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T005S01",
+    "displayValue" : "Exekuce na účtech",
+    "signalTypeCode" : "T005",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T005S02",
+    "displayValue" : "Blokace na účtech",
+    "signalTypeCode" : "T005",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T006S01",
+    "displayValue" : "Uplatněné bankovní garance",
+    "signalTypeCode" : "T006",
+    "availableManualInitialization" : false,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T007S01",
+    "displayValue" : "Neplnění smluvních podmínek",
+    "signalTypeCode" : "T007",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T008S01",
+    "displayValue" : "Negativní informace",
+    "signalTypeCode" : "T008",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T009S01",
+    "displayValue" : "Insolvence klienta",
+    "signalTypeCode" : "T009",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T010S01",
+    "displayValue" : "Využívání KTK",
+    "signalTypeCode" : "T010",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T011S01",
+    "displayValue" : "Změny ve statusu klienta",
+    "signalTypeCode" : "T011",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T012S01",
+    "displayValue" : "Insolvence ve skupině klienta",
+    "signalTypeCode" : "T012",
+    "availableManualInitialization" : false,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T013S01",
+    "displayValue" : "Interní varování (EMUS)",
+    "signalTypeCode" : "T013",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T014S01",
+    "displayValue" : "Plnění podmínek BB",
+    "signalTypeCode" : "T014",
+    "availableManualInitialization" : true,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T015S01",
+    "displayValue" : "Neplacení soc. a zdrav. pojištění, <2 a <4",
+    "signalTypeCode" : "T015",
+    "availableManualInitialization" : false,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T015S02",
+    "displayValue" : "Neplacení soc. a zdrav. pojištění, >4",
+    "signalTypeCode" : "T015",
+    "availableManualInitialization" : false,
+    "name" : "CB_EarlyWarningSignalSubType"
+  }, {
+    "code" : "T016S01",
+    "displayValue" : "Změny vypočteného finančního ratingu",
+    "signalTypeCode" : "T016",
+    "availableManualInitialization" : false,
+    "name" : "CB_EarlyWarningSignalSubType"
+  } ],
+  "CB_CMTContractualTermType" : [ {
+    "code" : "ZK001",
+    "displayValue" : "Adjusted debt gearing",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK002",
+    "displayValue" : "Adjusted DSCR including leasing",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK003",
+    "displayValue" : "Adjusted net debt coverage (incl. Off balance)",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK004",
+    "displayValue" : "Average accounts payable",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK005",
+    "displayValue" : "Average accounts receivable",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK006",
+    "displayValue" : "Average inventory",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK007",
+    "displayValue" : "Bankovní záruka",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK008",
+    "displayValue" : "Blankosměnka",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK009",
+    "displayValue" : "Czech master agreement, FX linky",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK010",
+    "displayValue" : "Debt gearing",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK011",
+    "displayValue" : "Doklad o zaplacení pojistného",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK012",
+    "displayValue" : "DSCR",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK013",
+    "displayValue" : "EIB Allocation Request",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK014",
+    "displayValue" : "EIB Oznámení o dokončení projektu",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK015",
+    "displayValue" : "EIB Oznámení o přidělení zdrojů",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK016",
+    "displayValue" : "EIB Snížení úrokové sazby v Symbols",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK017",
+    "displayValue" : "Fixed Assets Coverage",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK018",
+    "displayValue" : "Fond oprav",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK019",
+    "displayValue" : "Interest cover",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK020",
+    "displayValue" : "Kolaudace nemovitosti",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK021",
+    "displayValue" : "Kontrola předložení dokumentu",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK022",
+    "displayValue" : "Kontrola splnění povinnosti",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK023",
+    "displayValue" : "Kontrola závazku",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK024",
+    "displayValue" : "Kontrola čerpání z Colman",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK025",
+    "displayValue" : "Kupní smlouva",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK026",
+    "displayValue" : "Monitoring platební kázně",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK027",
+    "displayValue" : "Negative pledge",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK028",
+    "displayValue" : "Net debt coverage",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK029",
+    "displayValue" : "OP / OPÚ / OPBZ",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK030",
+    "displayValue" : "Ostatní zajištění",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK031",
+    "displayValue" : "Other financial covenant",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK032",
+    "displayValue" : "Other financial covenant - Group",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK033",
+    "displayValue" : "Patronátní prohlášení",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK034",
+    "displayValue" : "Platební styk",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK035",
+    "displayValue" : "Platnost úrokové sazby",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK036",
+    "displayValue" : "Podmínky čerpání",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK037",
+    "displayValue" : "Podřízení splatnosti závazků vůči třetím osobám",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK038",
+    "displayValue" : "Přecenění",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK039",
+    "displayValue" : "Přehled pohledávek a závazků",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK040",
+    "displayValue" : "Přehled zásob",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK041",
+    "displayValue" : "Překročení limitu MPL",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK042",
+    "displayValue" : "Restriction on CAPEX",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK043",
+    "displayValue" : "Rozdělení klientů",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK044",
+    "displayValue" : "Sesouladění funkčního celku",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK045",
+    "displayValue" : "Sloučení klientů",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK046",
+    "displayValue" : "Smlouva o dílo",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK047",
+    "displayValue" : "Smlouva o ručení",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK048",
+    "displayValue" : "Smluvní závazek",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK049",
+    "displayValue" : "Stavební povolení",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK050",
+    "displayValue" : "Tangible net worth",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK051",
+    "displayValue" : "Technická prolongace",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK052",
+    "displayValue" : "Uložení cenných papírů ve Scancentru",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK053",
+    "displayValue" : "Underlying EBIDA",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK054",
+    "displayValue" : "Underlying EBITDA",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK055",
+    "displayValue" : "Underlying EBITDA margin",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK056",
+    "displayValue" : "Vinkulace životního pojištění",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK057",
+    "displayValue" : "Vlastní zdroje",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK058",
+    "displayValue" : "Vstup do jiného úvěr. nebo zajišťov. vztahu",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK059",
+    "displayValue" : "VÚP / VPBZ",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK060",
+    "displayValue" : "Výkazy",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK061",
+    "displayValue" : "Výkazy - ostatní",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK062",
+    "displayValue" : "Výplata podílu na zisku",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK063",
+    "displayValue" : "Výstup z monitorovacího systému",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK064",
+    "displayValue" : "Zajišťovací převod vl. práva k movitým věcem",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK065",
+    "displayValue" : "Znalecký posudek",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK066",
+    "displayValue" : "Způsob / Schválení čerpání",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK067",
+    "displayValue" : "Způsob / Schválení čerpání / BZ",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK068",
+    "displayValue" : "Záruka za vícenáklady",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK069",
+    "displayValue" : "Zástavní právo: akcie",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK070",
+    "displayValue" : "Zástavní právo: dluhopisy",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK071",
+    "displayValue" : "Zástavní právo: movité věci",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK072",
+    "displayValue" : "Zástavní právo: nemovitosti",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK073",
+    "displayValue" : "Zástavní právo: obchodní podíly",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK074",
+    "displayValue" : "Zástavní právo: pohledávky",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK075",
+    "displayValue" : "Zástavní právo: pojištění",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK076",
+    "displayValue" : "Zástavní právo: účty",
+    "name" : "CB_CMTContractualTermType"
+  }, {
+    "code" : "ZK077",
+    "displayValue" : "Účet dluhové služby",
+    "name" : "CB_CMTContractualTermType"
+  } ],
+  "CB_AccountReservationType" : [ {
+    "code" : "1",
+    "displayValue" : "HOTOVOST VÝBĚR KARTOU S CIZÍHO ATM",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "2",
+    "displayValue" : "PLATBA24",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "3",
+    "displayValue" : "HOTOVOSTNÍ VÝBĚR KARTOU Z ATM ČS, A.S.",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "4",
+    "displayValue" : "BEZHOTOVOSTNÍ PLATBA KARTOU",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "5",
+    "displayValue" : "HOTOVOSTNÍ VÝBĚR KARTOU NA POKLADNĚ",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "6",
+    "displayValue" : "PLATBA KARTOU S VRÁCENÍM HOTOVOSTI (\"CASHBACK\") U ČS OBCHODNÍKA",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "7",
+    "displayValue" : "PLATBA KARTOU S VRÁCENÍM HOTOVOSTI (\"CASHBACK\") U CIZÍHO OBCHODNÍKA",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "8",
+    "displayValue" : "JEP K  ÚHRADĚ / TP K ÚHRADĚ - INTERNÍ PZS",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "9",
+    "displayValue" : "PŘEDAUTORIZACE",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "10",
+    "displayValue" : "PLATBA KARTOU - REFUNDACE",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "11",
+    "displayValue" : "PŘEVOD PENĚZ - KARTA",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "12",
+    "displayValue" : "DOTAZ NA ZŮSTATEK",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "13",
+    "displayValue" : "ÚROKY VRÁCENÉ",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "14",
+    "displayValue" : "ÚHRADA KLIENTEM",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "15",
+    "displayValue" : "PŘEVOD KARTY K NÁM",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "16",
+    "displayValue" : "PŮJČKA NA KARTĚ - PŘEVOD NA ÚČET",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "17",
+    "displayValue" : "PŮJČKA NA KARTĚ - VÝBĚR HOTOVOSTI",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "18",
+    "displayValue" : "JEDNORÁZOVÝ PŘÍKAZ PŘES BANKOMAT",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "19",
+    "displayValue" : "SPLÁTKOVÝ PROGRAM ÚVĚR",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "20",
+    "displayValue" : "SPLÁTKOVÝ PROGRAM ÚVĚR",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "21",
+    "displayValue" : "SPLÁTKOVÝ PROGRAM ÚVĚR",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "22",
+    "displayValue" : "SPLÁTKOVÝ PROGRAM ÚVĚR",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "23",
+    "displayValue" : "SPLÁTKOVÝ PROGRAM ÚVĚR",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "24",
+    "displayValue" : "SPLÁTKOVÝ PROGRAM ÚVĚR",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "25",
+    "displayValue" : "SPLÁTKOVÝ PROGRAM ÚVĚR",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "26",
+    "displayValue" : "SPLÁTKOVÝ PROGRAM ÚVĚR",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "27",
+    "displayValue" : "INKASO",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "28",
+    "displayValue" : "JEDNORÁZOVÝ PŘÍKAZ V POBOČCE",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "29",
+    "displayValue" : "JEDNORÁZOVÝ PŘÍKAZ S24 TELEBANKING",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "30",
+    "displayValue" : "ODPIS POHLEDÁVKY",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "31",
+    "displayValue" : "ODPIS POHLEDÁVKY",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "32",
+    "displayValue" : "ODPIS POHLEDÁVKY",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "33",
+    "displayValue" : "ODPIS POHLEDÁVKY",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "34",
+    "displayValue" : "VRÁCENÍ POPLATKU",
+    "name" : "CB_AccountReservationType"
+  }, {
+    "code" : "35",
+    "displayValue" : "ODPIS POHLEDÁVKY",
+    "name" : "CB_AccountReservationType"
+  } ],
+  "CB_EwsProcessRole" : [ {
+    "code" : "CMT_EWS_SearchClient",
+    "displayValue" : "Vyhledat klienta",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_ClientUnlimitedData",
+    "displayValue" : "Zobrazení detailu klienta (bez omezení přístupu ke klientům)",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_ClientDetail",
+    "displayValue" : "Zobrazení detailu klienta (s omezením přístupu ke klientům)",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_SearchSignal",
+    "displayValue" : "Vyhledat signál",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Validate1",
+    "displayValue" : "Validace signálu s rolí v důležitosti aspoň 1",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Validate2",
+    "displayValue" : "Validace signálu s rolí v důležitosti aspoň 2",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Validate3",
+    "displayValue" : "Validace signálu s rolí v důležitosti aspoň 3",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Validate4",
+    "displayValue" : "Validace signálu s rolí v důležitosti aspoň 4",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Assess",
+    "displayValue" : "Ohodnotit signál",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Classify1",
+    "displayValue" : "Klasifikace signálu s rolí v důležitosti aspoň 1",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Classify2",
+    "displayValue" : "Klasifikace signálu s rolí v důležitosti aspoň 2",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Classify3",
+    "displayValue" : "Klasifikace signálu s rolí v důležitosti aspoň 3",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Classify4",
+    "displayValue" : "Klasifikace signálu s rolí v důležitosti aspoň 4",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Delete",
+    "displayValue" : "Odstranit signál",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Delegate",
+    "displayValue" : "Delegovat úkol",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_DelegateToRisk",
+    "displayValue" : "Delegovat úkol na Risk",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_RequestAssessment",
+    "displayValue" : "Vyžádání hodnocení RSM",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_RequestComment",
+    "displayValue" : "Vyžádání komentář RSM",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Evaluate",
+    "displayValue" : "Vyhodnocení akčního plánu",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Reactivate",
+    "displayValue" : "Vrátit signál ke zpracování",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_InsertNote",
+    "displayValue" : "Přidat poznámku",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_GenerateReport",
+    "displayValue" : "Generování reportů",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Comment",
+    "displayValue" : "Komentovat signál",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Appeal",
+    "displayValue" : "Vyjádření RSM k akčnímu plánu",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_PrivateQueue",
+    "displayValue" : "Zobrazit soukromou frontu",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_CommonQueue",
+    "displayValue" : "Zobrazit společnou frontu",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_CommonQueueOrgUnit",
+    "displayValue" : "Zobrazit společnou frontu pro RKC",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_PlannedTasks",
+    "displayValue" : "Zobrazit plánované úkoly",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_CreateSignal",
+    "displayValue" : "Manuálně založit signál",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_SignalDetail",
+    "displayValue" : "Zobrazení detailu signálu",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_ChangeConfiguration",
+    "displayValue" : "Změna konfigurace systému",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_DailyOwnerNotification",
+    "displayValue" : "Příjímání denních souhrnných notifikací o přidělených úkolech adresátovi.",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_WorkoutNotification",
+    "displayValue" : "Přijímání denních souhrnných notifikacích o klientech, kteří spadli do workout.",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_RiskAssistant",
+    "displayValue" : "Přijímání denní souhrnných notifikací o úkolech, které nemají řešitele.",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_OperatorEWS",
+    "displayValue" : "EWS",
+    "forEvaluation" : true,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_OperatorRisk",
+    "displayValue" : "RISK",
+    "forEvaluation" : true,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_OperatorRSM",
+    "displayValue" : "RSM",
+    "forEvaluation" : true,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_RSMSupport",
+    "displayValue" : "RSM Podpora",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Classify1B",
+    "displayValue" : "Klasifikace signálu s rolí v důležitosti aspoň 1",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_Validate1B",
+    "displayValue" : "Validace signálu s rolí v důležitosti aspoň 1",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  }, {
+    "code" : "CMT_EWS_DelegateToEWS",
+    "displayValue" : "Delegovat úkol na EWS",
+    "forEvaluation" : false,
+    "name" : "CB_EwsProcessRole"
+  } ],
+  "CB_D4Sector" : [ {
+    "code" : "AUTOMOTIVE",
+    "displayValue" : "Automotive",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "PRIVATE_HOUSEHOLDS",
+    "displayValue" : "Činnosti domácností",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "TRANSPORTATION",
+    "displayValue" : "Doprava",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "ENERGY",
+    "displayValue" : "Energetika",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "FINANCIAL_INSTITUTIONS",
+    "displayValue" : "Finanční instituce",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "OTHER",
+    "displayValue" : "Ostatní",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "NATURAL_RESOURCES_AND_COMMODIT",
+    "displayValue" : "Přírodní zdroje a komodity",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "REAL_ESTATE",
+    "displayValue" : "Real Estate",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "CYCLICAL_CONSUMER_PRODUCTS",
+    "displayValue" : "Spotřební průmysl - cyklický",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "NON-CYCLICAL_CONSUMER_PRODUCTS",
+    "displayValue" : "Spotřební průmysl - necyklický",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "CONSTRUCTION_AND_BUILDING_MAT",
+    "displayValue" : "Stavebnictví a stavební mat.",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "MACHINERY",
+    "displayValue" : "Strojírenství",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "TMT",
+    "displayValue" : "Technologie, media, telekom.",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "HOTELS_AND_LEISURE",
+    "displayValue" : "Ubyt,strav a volnočas aktivity",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "PUBLIC_SECTOR",
+    "displayValue" : "Veřejný sektor",
+    "name" : "CB_D4Sector"
+  }, {
+    "code" : "HEALTHCARE_AND_SERVICES",
+    "displayValue" : "Zdravotnictví",
+    "name" : "CB_D4Sector"
+  } ],
+  "CB_RiskClassification" : [ {
+    "code" : "EW0",
+    "displayValue" : "EW0",
+    "tooltip" : "Klient nemá žádné varovné signály",
+    "validForClient" : true,
+    "validForSignal" : false,
+    "name" : "CB_RiskClassification"
+  }, {
+    "code" : "EW1",
+    "displayValue" : "EW1",
+    "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+    "validForClient" : true,
+    "validForSignal" : true,
+    "name" : "CB_RiskClassification"
+  }, {
+    "code" : "EW2",
+    "displayValue" : "EW2",
+    "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+    "validForClient" : true,
+    "validForSignal" : true,
+    "name" : "CB_RiskClassification"
+  }, {
+    "code" : "EW3",
+    "displayValue" : "EW3",
+    "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+    "validForClient" : true,
+    "validForSignal" : true,
+    "name" : "CB_RiskClassification"
+  } ],
+  "CB_FscsClientRating" : [ {
+    "code" : "0",
+    "displayValue" : "0_Žádný interní rating",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "1",
+    "displayValue" : "1_Extrémně silný",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "2",
+    "displayValue" : "2_Velmi silný",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "3",
+    "displayValue" : "3_Silný",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "4",
+    "displayValue" : "4_Dobrý",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "4A",
+    "displayValue" : "4A_Dobrý",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "4B",
+    "displayValue" : "4B_Velmi uspokojivý",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "4C",
+    "displayValue" : "4C_Uspokojivý",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "5",
+    "displayValue" : "5_Střední riziko",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "5A",
+    "displayValue" : "5A_Nižší střední riziko",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "5B",
+    "displayValue" : "5B_Střední riziko",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "5C",
+    "displayValue" : "5C_Vyšší střední riziko",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "6",
+    "displayValue" : "6_Zranitelný",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "6A",
+    "displayValue" : "6A_Zranitelný",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "6B",
+    "displayValue" : "6B_Velmi zranitelný",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7",
+    "displayValue" : "7_Slabý",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "8",
+    "displayValue" : "8_Riziko ztráty",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R1",
+    "displayValue" : "R1_Úplné splacení nejisté",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R1A",
+    "displayValue" : "R1A_Úplné splacení nejisté",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R1B",
+    "displayValue" : "R1B_Úplné splac. nepravděpod",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R2A",
+    "displayValue" : "R2A_Po splat. 91 - 180 dní",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R2B",
+    "displayValue" : "R2B_Po splat. 181 - 360 dní",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R2C",
+    "displayValue" : "R2C_Po splat. 361 a více dní",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R3",
+    "displayValue" : "R3_Restrukturalizace pohl.",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R4",
+    "displayValue" : "R4_Ztráta z úvěru(odpis pohl.)",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R5",
+    "displayValue" : "R5_Konkurz. nebo vyrov. řízení",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "R",
+    "displayValue" : "R_Ztrátový",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "N",
+    "displayValue" : "Neznámý rating",
+    "organization" : true,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "91",
+    "displayValue" : "FICO rating 91",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "94",
+    "displayValue" : "FICO rating 94",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "97",
+    "displayValue" : "FICO rating 97",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "98",
+    "displayValue" : "FICO rating 98",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "100",
+    "displayValue" : "Rating pro modelování",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "101",
+    "displayValue" : "FICO rating 1",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "102",
+    "displayValue" : "FICO rating 2",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "103",
+    "displayValue" : "FICO rating 3",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "104",
+    "displayValue" : "FICO rating 4",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "105",
+    "displayValue" : "FICO rating 5",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "106",
+    "displayValue" : "FICO rating 6",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "107",
+    "displayValue" : "FICO rating 7",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "108",
+    "displayValue" : "FICO rating 8",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "109",
+    "displayValue" : "FICO rating 9",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "110",
+    "displayValue" : "FICO rating 10",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "111",
+    "displayValue" : "FICO rating 11",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "112",
+    "displayValue" : "FICO rating 12",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "113",
+    "displayValue" : "FICO rating 13",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "114",
+    "displayValue" : "FICO rating 14",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "115",
+    "displayValue" : "FICO rating 15",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "116",
+    "displayValue" : "FICO rating 16",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "117",
+    "displayValue" : "FICO rating 17",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "118",
+    "displayValue" : "FICO rating 18",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "119",
+    "displayValue" : "FICO rating 19",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "201",
+    "displayValue" : "FICO rating 201",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "202",
+    "displayValue" : "FICO rating 202",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "203",
+    "displayValue" : "FICO rating 203",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "204",
+    "displayValue" : "FICO rating 204",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "205",
+    "displayValue" : "FICO rating 205",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "206",
+    "displayValue" : "FICO rating 206",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "207",
+    "displayValue" : "FICO rating 207",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "208",
+    "displayValue" : "FICO rating 208",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "209",
+    "displayValue" : "FICO rating 209",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "210",
+    "displayValue" : "FICO rating 210",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "211",
+    "displayValue" : "FICO rating 211",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "212",
+    "displayValue" : "FICO rating 212",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "213",
+    "displayValue" : "FICO rating 213",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "214",
+    "displayValue" : "FICO rating 214",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "215",
+    "displayValue" : "FICO rating 215",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "216",
+    "displayValue" : "FICO rating 216",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "217",
+    "displayValue" : "FICO rating 217",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "218",
+    "displayValue" : "FICO rating 218",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "219",
+    "displayValue" : "FICO rating 219",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "220",
+    "displayValue" : "FICO rating 220",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "221",
+    "displayValue" : "FICO rating 221",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "222",
+    "displayValue" : "FICO rating 222",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "223",
+    "displayValue" : "FICO rating 223",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "224",
+    "displayValue" : "FICO rating 224",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "225",
+    "displayValue" : "FICO rating 225",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "226",
+    "displayValue" : "FICO rating 226",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "227",
+    "displayValue" : "FICO rating 227",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "228",
+    "displayValue" : "FICO rating 228",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "229",
+    "displayValue" : "FICO rating 229",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "230",
+    "displayValue" : "FICO rating 230",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "231",
+    "displayValue" : "FICO rating 231",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "912",
+    "displayValue" : "FICO rating 912",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "914",
+    "displayValue" : "FICO rating 914",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "918",
+    "displayValue" : "FICO rating 918",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "921",
+    "displayValue" : "FICO rating 921",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "924",
+    "displayValue" : "FICO rating 924",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "928",
+    "displayValue" : "FICO rating 928",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "931",
+    "displayValue" : "FICO rating 931",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "936",
+    "displayValue" : "FICO rating 936",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "939",
+    "displayValue" : "FICO rating 939",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "943",
+    "displayValue" : "FICO rating 943",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "948",
+    "displayValue" : "FICO rating 948",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "950",
+    "displayValue" : "FICO rating 950",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "953",
+    "displayValue" : "FICO rating 953",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "958",
+    "displayValue" : "FICO rating 958",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "962",
+    "displayValue" : "FICO rating 962",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "967",
+    "displayValue" : "FICO rating 967",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "970",
+    "displayValue" : "FICO rating 970",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "974",
+    "displayValue" : "FICO rating 974",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "977",
+    "displayValue" : "FICO rating 977",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "981",
+    "displayValue" : "FICO rating 981",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "984",
+    "displayValue" : "FICO rating 984",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "989",
+    "displayValue" : "FICO rating 989",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "993",
+    "displayValue" : "FICO rating 993",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "998",
+    "displayValue" : "FICO rating 998",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7701",
+    "displayValue" : "FICO rating 7701",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7702",
+    "displayValue" : "FICO rating 7702",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7703",
+    "displayValue" : "FICO rating 7703",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7704",
+    "displayValue" : "FICO rating 7704",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7705",
+    "displayValue" : "FICO rating 7705",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7706",
+    "displayValue" : "FICO rating 7706",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7707",
+    "displayValue" : "FICO rating 7707",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7708",
+    "displayValue" : "FICO rating 7708",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7709",
+    "displayValue" : "FICO rating 7709",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7710",
+    "displayValue" : "FICO rating 7710",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7711",
+    "displayValue" : "FICO rating 7711",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7712",
+    "displayValue" : "FICO rating 7712",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7713",
+    "displayValue" : "FICO rating 7713",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7714",
+    "displayValue" : "FICO rating 7714",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7715",
+    "displayValue" : "FICO rating 7715",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7716",
+    "displayValue" : "FICO rating 7716",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7717",
+    "displayValue" : "FICO rating 7717",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7718",
+    "displayValue" : "FICO rating 7718",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7719",
+    "displayValue" : "FICO rating 7719",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7720",
+    "displayValue" : "FICO rating 7720",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7721",
+    "displayValue" : "FICO rating 7721",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7722",
+    "displayValue" : "FICO rating 7722",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7723",
+    "displayValue" : "FICO rating 7723",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7724",
+    "displayValue" : "FICO rating 7724",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7725",
+    "displayValue" : "FICO rating 7725",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7726",
+    "displayValue" : "FICO rating 7726",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7727",
+    "displayValue" : "FICO rating 7727",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7728",
+    "displayValue" : "FICO rating 7728",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7729",
+    "displayValue" : "FICO rating 7729",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7730",
+    "displayValue" : "FICO rating 7730",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7731",
+    "displayValue" : "FICO rating 7731",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7732",
+    "displayValue" : "FICO rating 7732",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7733",
+    "displayValue" : "FICO rating 7733",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7734",
+    "displayValue" : "FICO rating 7734",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7735",
+    "displayValue" : "FICO rating 7735",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7736",
+    "displayValue" : "FICO rating 7736",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7737",
+    "displayValue" : "FICO rating 7737",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7738",
+    "displayValue" : "FICO rating 7738",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7739",
+    "displayValue" : "FICO rating 7739",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7740",
+    "displayValue" : "FICO rating 7740",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7741",
+    "displayValue" : "FICO rating 7741",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7742",
+    "displayValue" : "FICO rating 7742",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7743",
+    "displayValue" : "FICO rating 7743",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7744",
+    "displayValue" : "FICO rating 7744",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7745",
+    "displayValue" : "FICO rating 7745",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7746",
+    "displayValue" : "FICO rating 7746",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7747",
+    "displayValue" : "FICO rating 7747",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7748",
+    "displayValue" : "FICO rating 7748",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7749",
+    "displayValue" : "FICO rating 7749",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7750",
+    "displayValue" : "FICO rating 7750",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7751",
+    "displayValue" : "FICO rating 7751",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7752",
+    "displayValue" : "FICO rating 7752",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7753",
+    "displayValue" : "FICO rating 7753",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7754",
+    "displayValue" : "FICO rating 7754",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7755",
+    "displayValue" : "FICO rating 7755",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7756",
+    "displayValue" : "FICO rating 7756",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7757",
+    "displayValue" : "FICO rating 7757",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7758",
+    "displayValue" : "FICO rating 7758",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7759",
+    "displayValue" : "FICO rating 7759",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7760",
+    "displayValue" : "FICO rating 7760",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7761",
+    "displayValue" : "FICO rating 7761",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7762",
+    "displayValue" : "FICO rating 7762",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7763",
+    "displayValue" : "FICO rating 7763",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7764",
+    "displayValue" : "FICO rating 7764",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7765",
+    "displayValue" : "FICO rating 7765",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7766",
+    "displayValue" : "FICO rating 7766",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7767",
+    "displayValue" : "FICO rating 7767",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7768",
+    "displayValue" : "FICO rating 7768",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7769",
+    "displayValue" : "FICO rating 7769",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7770",
+    "displayValue" : "FICO rating 7770",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7771",
+    "displayValue" : "FICO rating 7771",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7772",
+    "displayValue" : "FICO rating 7772",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7773",
+    "displayValue" : "FICO rating 7773",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7774",
+    "displayValue" : "FICO rating 7774",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7775",
+    "displayValue" : "FICO rating 7775",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7776",
+    "displayValue" : "FICO rating 7776",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7777",
+    "displayValue" : "FICO rating 7777",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7778",
+    "displayValue" : "FICO rating 7778",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7779",
+    "displayValue" : "FICO rating 7779",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7780",
+    "displayValue" : "FICO rating 7780",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7781",
+    "displayValue" : "FICO rating 7781",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7782",
+    "displayValue" : "FICO rating 7782",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7783",
+    "displayValue" : "FICO rating 7783",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7784",
+    "displayValue" : "FICO rating 7784",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7785",
+    "displayValue" : "FICO rating 7785",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7786",
+    "displayValue" : "FICO rating 7786",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7787",
+    "displayValue" : "FICO rating 7787",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7788",
+    "displayValue" : "FICO rating 7788",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7789",
+    "displayValue" : "FICO rating 7789",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7790",
+    "displayValue" : "FICO rating 7790",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7791",
+    "displayValue" : "FICO rating 7791",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7792",
+    "displayValue" : "FICO rating 7792",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7793",
+    "displayValue" : "FICO rating 7793",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7794",
+    "displayValue" : "FICO rating 7794",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7795",
+    "displayValue" : "FICO rating 7795",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7796",
+    "displayValue" : "FICO rating 7796",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7797",
+    "displayValue" : "FICO rating 7797",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7798",
+    "displayValue" : "FICO rating 7798",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7799",
+    "displayValue" : "FICO rating 7799",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7800",
+    "displayValue" : "FICO rating 7800",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7801",
+    "displayValue" : "FICO rating 7801",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7802",
+    "displayValue" : "FICO rating 7802",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7803",
+    "displayValue" : "FICO rating 7803",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7804",
+    "displayValue" : "FICO rating 7804",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7805",
+    "displayValue" : "FICO rating 7805",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7806",
+    "displayValue" : "FICO rating 7806",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7807",
+    "displayValue" : "FICO rating 7807",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7808",
+    "displayValue" : "FICO rating 7808",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7809",
+    "displayValue" : "FICO rating 7809",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7810",
+    "displayValue" : "FICO rating 7810",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7811",
+    "displayValue" : "FICO rating 7811",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7812",
+    "displayValue" : "FICO rating 7812",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7813",
+    "displayValue" : "FICO rating 7813",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7814",
+    "displayValue" : "FICO rating 7814",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "7815",
+    "displayValue" : "FICO rating 7815",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9103",
+    "displayValue" : "FICO rating 9103",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9104",
+    "displayValue" : "FICO rating 9104",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9111",
+    "displayValue" : "FICO rating 9111",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9113",
+    "displayValue" : "FICO rating 9113",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9119",
+    "displayValue" : "FICO rating 9119",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9120",
+    "displayValue" : "FICO rating 9120",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9128",
+    "displayValue" : "FICO rating 9128",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9130",
+    "displayValue" : "FICO rating 9130",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9135",
+    "displayValue" : "FICO rating 9135",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9139",
+    "displayValue" : "FICO rating 9139",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9143",
+    "displayValue" : "FICO rating 9143",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9147",
+    "displayValue" : "FICO rating 9147",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9150",
+    "displayValue" : "FICO rating 9150",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9154",
+    "displayValue" : "FICO rating 9154",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9157",
+    "displayValue" : "FICO rating 9157",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9162",
+    "displayValue" : "FICO rating 9162",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9164",
+    "displayValue" : "FICO rating 9164",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9171",
+    "displayValue" : "FICO rating 9171",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9172",
+    "displayValue" : "FICO rating 9172",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9178",
+    "displayValue" : "FICO rating 9178",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9179",
+    "displayValue" : "FICO rating 9179",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9180",
+    "displayValue" : "FICO rating 9180",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9181",
+    "displayValue" : "FICO rating 9181",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9183",
+    "displayValue" : "FICO rating 9183",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9184",
+    "displayValue" : "FICO rating 9184",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9185",
+    "displayValue" : "FICO rating 9185",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9187",
+    "displayValue" : "FICO rating 9187",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9190",
+    "displayValue" : "FICO rating 9190",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9191",
+    "displayValue" : "FICO rating 9191",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9192",
+    "displayValue" : "FICO rating 9192",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9193",
+    "displayValue" : "FICO rating 9193",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9194",
+    "displayValue" : "FICO rating 9194",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9197",
+    "displayValue" : "FICO rating 9197",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9198",
+    "displayValue" : "FICO rating 9198",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9200",
+    "displayValue" : "FICO rating 9200",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9201",
+    "displayValue" : "FICO rating 9201",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9202",
+    "displayValue" : "FICO rating 9202",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9203",
+    "displayValue" : "FICO rating 9203",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9206",
+    "displayValue" : "FICO rating 9206",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9207",
+    "displayValue" : "FICO rating 9207",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9209",
+    "displayValue" : "FICO rating 9209",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9210",
+    "displayValue" : "FICO rating 9210",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9212",
+    "displayValue" : "FICO rating 9212",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9215",
+    "displayValue" : "FICO rating 9215",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9217",
+    "displayValue" : "FICO rating 9217",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9220",
+    "displayValue" : "FICO rating 9220",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9225",
+    "displayValue" : "FICO rating 9225",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9227",
+    "displayValue" : "FICO rating 9227",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9235",
+    "displayValue" : "FICO rating 9235",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9243",
+    "displayValue" : "FICO rating 9243",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9250",
+    "displayValue" : "FICO rating 9250",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9257",
+    "displayValue" : "FICO rating 9257",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9264",
+    "displayValue" : "FICO rating 9264",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9274",
+    "displayValue" : "FICO rating 9274",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9277",
+    "displayValue" : "FICO rating 9277",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9284",
+    "displayValue" : "FICO rating 9284",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "9291",
+    "displayValue" : "FICO rating 9291",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S1",
+    "displayValue" : "FICO rating S1",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S103",
+    "displayValue" : "FICO rating S103",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S113",
+    "displayValue" : "FICO rating S113",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S12",
+    "displayValue" : "FICO rating S12",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S120",
+    "displayValue" : "FICO rating S120",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S130",
+    "displayValue" : "FICO rating S130",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S139",
+    "displayValue" : "FICO rating S139",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S147",
+    "displayValue" : "FICO rating S147",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S154",
+    "displayValue" : "FICO rating s154",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S162",
+    "displayValue" : "FICO rating S162",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S172",
+    "displayValue" : "FICO rating S172",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S18",
+    "displayValue" : "FICO rating S18",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S180",
+    "displayValue" : "FICO rating S180",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S187",
+    "displayValue" : "FICO rating S187",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S193",
+    "displayValue" : "FICO rating S193",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S200",
+    "displayValue" : "FICO rating S200",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S201",
+    "displayValue" : "FICO rating S201",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S202",
+    "displayValue" : "FICO rating S202",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S206",
+    "displayValue" : "FICO rating S206",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S210",
+    "displayValue" : "FICO rating S210",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S217",
+    "displayValue" : "FICO rating S217",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S225",
+    "displayValue" : "FICO rating S225",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S227",
+    "displayValue" : "FICO rating S227",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S235",
+    "displayValue" : "FICO rating S235",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S24",
+    "displayValue" : "FICO rating S24",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S243",
+    "displayValue" : "FICO rating S243",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S250",
+    "displayValue" : "FICO rating S250",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S257",
+    "displayValue" : "FICO rating S257",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S264",
+    "displayValue" : "FICO rating S264",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S274",
+    "displayValue" : "FICO rating S274",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S277",
+    "displayValue" : "FICO rating S277",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S284",
+    "displayValue" : "FICO rating S284",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S291",
+    "displayValue" : "FICO rating S291",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S31",
+    "displayValue" : "FICO rating S31",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S39",
+    "displayValue" : "FICO rating S39",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S4",
+    "displayValue" : "FICO rating S4",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S48",
+    "displayValue" : "FICO rating S48",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S53",
+    "displayValue" : "FICO rating S53",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S62",
+    "displayValue" : "FICO rating S62",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S7",
+    "displayValue" : "FICO rating S7",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S70",
+    "displayValue" : "FICO rating S70",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S77",
+    "displayValue" : "FICO rating S77",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S84",
+    "displayValue" : "FICO rating S84",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  }, {
+    "code" : "S93",
+    "displayValue" : "FICO rating S93",
+    "organization" : false,
+    "name" : "CB_FscsClientRating"
+  } ]
+}

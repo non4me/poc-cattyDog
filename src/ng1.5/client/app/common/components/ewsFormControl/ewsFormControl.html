@@ -1,0 +1,75 @@
+<div ng-if="vm.mode == 'view'" ng-switch="vm.type">
+  <!-- Datepicker -->
+  <span ng-switch-when="datepicker">{{vm.source | ewsDate}} </span>
+  <!-- Checkbox -->
+  <div ng-switch-when="checkbox" class="" ng-required="vm.required">
+    <label>
+      <input class="readonly" type="checkbox" ng-attr-id="{{vm.name}}" ng-model="vm.source"
+             ng-required="vm.required" ng-checked="vm.source == 'true'" disabled>
+      {{::vm.name}}
+    </label>
+  </div>
+
+  <!-- Select -->
+  <span ng-switch-when="select" ng-if="vm.source">{{vm.translateCodebook(vm.source)}}</span>
+
+
+	<span ng-switch-when="inputCurrency" ng-if="vm.source">
+
+		{{vm.source | ewsCurrency}}
+	</span>
+	<span ng-switch-when="inputPercentage" ng-if="vm.source">
+		{{vm.source | ewsPercentage}}
+	</span>
+
+    <span ng-switch-default="">
+        {{vm.source}}
+    </span>
+</div>
+<div ng-if="vm.mode == 'edit'" ng-switch="vm.type">
+  <!-- Datepicker -->
+  <div ng-switch-when="datepicker" class="datepicker">
+    <input ng-attr-id="{{vm.name}}" ng-model="vm.source" class="" value="" type="text" datepicker
+           min-date="vm.minDate"
+           max-date="vm.maxDate"
+           ng-model-options="{ updateOn: 'default input ' }"
+           label-id="{{vm.name}}"
+           ng-required="vm.required">
+  </div>
+
+  <!-- Inputs -->
+  <!-- Unfortunately, ng-switch-when does not support OR, so there are three fields with the same attributes -->
+  <input ng-switch-when="input" ng-attr-id="{{vm.name}}" ng-model="vm.source" class="form-control" value=""
+         type="text" ng-required="vm.required">
+  <input ng-switch-when="inputCurrency" ng-attr-id="{{vm.name}}" ng-model="vm.source" class="form-control"
+         value=""
+         type="text" ng-required="vm.required">
+  <input ng-switch-when="inputPercentage" ng-attr-id="{{vm.name}}" ng-model="vm.source" class="form-control"
+         value=""
+         type="text" ng-required="vm.required">
+
+  <!-- Textarea-->
+    <textarea ng-switch-when="textarea" ng-attr-id="{{vm.name}}" ng-model="vm.source"
+              ng-required="vm.required"></textarea>
+
+  <!-- Select -->
+  <select ng-switch-when="select" ng-attr-id="{{vm.name}}"
+          ng-options="option.code as option.displayValue for option in vm.options | filter: vm.filterBy"
+          ng-model="vm.source" class="form-control"
+          ng-required="vm.required">
+    <option value="" selected disabled>Vyberte hodnotu</option>
+  </select>
+
+  <!-- Checkbox -->
+  <div ng-switch-when="checkbox" class="checkbox" ng-required="vm.required">
+    <label>
+      <input type="checkbox" ng-attr-id="{{vm.name}}" ng-model="vm.source" ng-required="vm.required">
+      {{::vm.name}}
+    </label>
+  </div>
+
+  <!-- Default -->
+    <span ng-switch-default="">
+        {{vm.source}}
+    </span>
+</div>

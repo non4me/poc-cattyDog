@@ -1,0 +1,137 @@
+<div class="container" role="main">
+  <alerts></alerts>
+  <div class="page-header">
+    <h1>Založit manuální signál</h1>
+  </div>
+
+  <div class="container-white">
+    <div class="row client-info">
+      <CLIENT-OVERVIEW template="detailed"
+                       data="vm.data"
+                       codebooks="vm.codebooks"
+                       collapsible="false"
+                       links="data._links"></CLIENT-OVERVIEW>
+
+    </div>
+    <hr/>
+    <form id="createSignalForm" name="createSignalForm" ng-submit="vm.createSignal(this)" novalidate>
+      <div class="row">
+
+
+        <!--Signal types-->
+        <label for="signalType" class="col-xs-3">
+          Název signálu&nbsp;*
+        </label>
+
+        <div class="col-xs-3" tooltip-error="signalTypeSelected">
+          <select ng-model="vm.signalTypeSelected"
+                  ng-options='typeCode.code
+                                as typeCode.displayValue
+                                for typeCode in vm.signalTypeCodes'
+                  class="form-control"
+                  id="signalType"
+                  required="true"
+                  name="signalTypeSelected" ng-change="vm.signalTypeSelectedChange(this)">
+          </select>
+        </div>
+
+
+        <!-- Signal classification -->
+        <label for="confirmedClassification" class="col-xs-3 ">
+          Klasifikace signálu&nbsp;*
+        </label>
+
+        <div class="col-xs-3" tooltip-error="newSignal.riskClassificationCode">
+          <select ng-model="vm.newSignal.riskClassificationCode"
+                  ng-options="classification.code as classification.code for classification in vm.classifications | filter:{validForSignal:true}"
+                  class="form-control"
+                  id="confirmedClassification"
+                  required="true"
+                  name="newSignal.riskClassificationCode">
+            <option value="" selected disabled>Vyberte hodnocení</option>
+          </select>
+        </div>
+
+        <div class="clearfix"></div>
+        <!-- Signal subtypes -->
+        <label for="signalType" class="col-sm-3 ">
+          Podtyp signálu&nbsp;*
+        </label>
+
+        <div class="col-sm-3" tooltip-error="signalSubTypeSelected">
+          <select ng-model="vm.signalSubTypeSelected"
+                  ng-options='subTypeCode.code
+                                as subTypeCode.displayValue
+                                for subTypeCode in vm.signalSubTypeCodes[vm.signalTypeSelected]'
+                  class="form-control"
+                  id="signalSubType"
+                  required="true"
+                  name="signalSubTypeSelected" ng-change="vm.signalSubTypeSelectedChange(this)">
+          </select>
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class=" form-group">
+          <div class="block-header">
+            <h3>
+              Popis signálu&nbsp;*
+            </h3>
+          </div>
+          <div class="col-xs-12"
+               tooltip-error="newSignal.description"
+               tooltip-error-data="{maxlength: vm.descriptionMaxLength}">
+                        <textarea
+                          ng-model="vm.newSignal.description"
+                          required="true"
+                          ng-maxlength="vm.descriptionMaxLength"
+                          maxlength="{{::vm.descriptionMaxLength+1}}"
+                          name="newSignal.description"></textarea>
+          </div>
+
+        </div>
+      </div>
+      <hr ng-if="vm.signalTypeSelected != 'T008'"/>
+      <div class="row">
+        <div class="form-group" ng-if="vm.signalTypeSelected != 'T008'">
+          <div class="block-header">
+            <h3>
+              Specifická data signálu
+            </h3>
+          </div>
+          <div class="col-xs-12">
+            <EWS-SPECIFIC-DATA form-control-mode="edit"
+                               model="vm.newSignal.specificData"
+                               type="vm.signalTypeSelected"></EWS-SPECIFIC-DATA>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div class="row">
+        <div class="form-group">
+          <div class="block-header">
+            <h3>
+              Poznámka
+            </h3>
+          </div>
+
+          <div class="col-xs-12" tooltip-error="newSignal.note"
+               tooltip-error-data="{minlength: noteMinLength, maxlength:noteMaxLength}">
+                        <textarea name="newSignal.note"
+                                  ng-minlength="{{::vm.noteMinLength}}"
+                                  ng-maxlength="{{::vm.noteMaxLength}}"
+                                  maxlength="{{::vm.noteMaxLength+1}}"
+                                  ng-model="vm.newSignal.note"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <input class="btn btn-default" type="submit" value="Založit signál">
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

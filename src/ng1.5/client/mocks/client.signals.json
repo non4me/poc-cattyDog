@@ -1,0 +1,689 @@
+{
+  "businessErrors" : null,
+  "clientInfo" : {
+    "warnings" : { },
+    "translatedWarnings" : [ ],
+    "duplicate" : false,
+    "fop" : false,
+    "cluid" : "9008-03-05-18.53.23.283376",
+    "name" : "Commexim Group a.s.",
+    "riskClassificationConfirmed" : {
+      "code" : "EW3",
+      "displayValue" : "EW3",
+      "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "riskClassificationDraft" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "organization" : {
+      "sectorNACE" : {
+        "code" : "467200",
+        "displayValue" : "Velkoobchod s rudami, kovy a hutními výrobky",
+        "name" : "CB_IndustryCategory"
+      },
+      "d4Sector" : {
+        "code" : "NATURAL_RESOURCES_AND_COMMODIT",
+        "displayValue" : "Přírodní zdroje a komodity",
+        "name" : "CB_D4Sector"
+      },
+      "registrationNumber" : "27133222",
+      "taxNumber" : "CZ27133222",
+      "registrationAuthority" : "Městský soud v Praze",
+      "countryOfRegistration" : "CZ",
+      "typeOfRegister" : "1"
+    }
+  },
+  "riskProfile" : {
+    "symbolId" : "020177",
+    "nextReviewDate" : "2015-04-29T22:00:00Z",
+    "limitExpositionCurrentExtraction" : 0,
+    "limitExpositionApprovedCzk" : 62710304.76,
+    "limitExpositionApprovedEur" : 2320455.3103,
+    "status" : {
+      "status" : "PO_FOUND"
+    }
+  },
+  "signalItems" : {
+    "businessErrors" : null,
+    "headers" : null,
+    "items" : [ {
+      "businessErrors" : null,
+      "signalId" : "EWS1001865",
+      "signalType" : {
+        "code" : "T008",
+        "displayValue" : "Negativní informace",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "CAPTURED",
+        "displayValue" : "Zachycený",
+        "description" : "Signál je zachycený a předaný na řešení uživateli.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1001865",
+      "signalCreationDate" : "2016-05-09T12:28:24Z",
+      "actionPlanChangeDate" : null,
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001865?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1001862",
+      "signalType" : {
+        "code" : "T002",
+        "displayValue" : "Polhůtní pohledávky",
+        "entity" : "PastDueFacts",
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "CAPTURED",
+        "displayValue" : "Zachycený",
+        "description" : "Signál je zachycený a předaný na řešení uživateli.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1001862",
+      "signalCreationDate" : "2016-05-09T11:46:41Z",
+      "actionPlanChangeDate" : null,
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001862?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1001861",
+      "signalType" : {
+        "code" : "T001",
+        "displayValue" : "Rating 7 nebo zhoršení IR",
+        "entity" : "ClientRating",
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "FILED",
+        "displayValue" : "Evidovaný",
+        "description" : "Signál je zaevidován ke klientovi, ale nespouští další proces.",
+        "finalni" : true,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1001861",
+      "signalCreationDate" : "2016-05-09T11:42:45Z",
+      "actionPlanChangeDate" : null,
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001861?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1000543",
+      "signalType" : {
+        "code" : "T011",
+        "displayValue" : "Změny ve statusu klienta",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "CLASSIFIED",
+        "displayValue" : "Klasifikovaný",
+        "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1000543",
+      "signalCreationDate" : "2016-03-17T15:07:34Z",
+      "actionPlanChangeDate" : "2016-04-21T10:24:03Z",
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000543?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1000541",
+      "signalType" : {
+        "code" : "T011",
+        "displayValue" : "Změny ve statusu klienta",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "ASSESSED",
+        "displayValue" : "Ohodnocený",
+        "description" : "Signál je ohodnocený RSM a pokračuje dále na validaci.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1000541",
+      "signalCreationDate" : "2016-03-17T14:59:57Z",
+      "actionPlanChangeDate" : null,
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000541?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1000540",
+      "signalType" : {
+        "code" : "T011",
+        "displayValue" : "Změny ve statusu klienta",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "VALIDATED",
+        "displayValue" : "Validovaný",
+        "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1000540",
+      "signalCreationDate" : "2016-03-17T14:52:16Z",
+      "actionPlanChangeDate" : null,
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000540?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1000539",
+      "signalType" : {
+        "code" : "T011",
+        "displayValue" : "Změny ve statusu klienta",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "CAPTURED",
+        "displayValue" : "Zachycený",
+        "description" : "Signál je zachycený a předaný na řešení uživateli.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1000539",
+      "signalCreationDate" : "2016-03-17T14:49:43Z",
+      "actionPlanChangeDate" : null,
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000539?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1000538",
+      "signalType" : {
+        "code" : "T011",
+        "displayValue" : "Změny ve statusu klienta",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "CLASSIFIED",
+        "displayValue" : "Klasifikovaný",
+        "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1000538",
+      "signalCreationDate" : "2016-03-17T14:40:43Z",
+      "actionPlanChangeDate" : "2016-03-17T14:42:23Z",
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000538?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1000537",
+      "signalType" : {
+        "code" : "T011",
+        "displayValue" : "Změny ve statusu klienta",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW3",
+        "displayValue" : "EW3",
+        "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "CLASSIFIED",
+        "displayValue" : "Klasifikovaný",
+        "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1000537",
+      "signalCreationDate" : "2016-03-17T14:37:27Z",
+      "actionPlanChangeDate" : "2016-03-17T14:39:37Z",
+      "actionPlanSignal" : true,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000537?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1000535",
+      "signalType" : {
+        "code" : "T011",
+        "displayValue" : "Změny ve statusu klienta",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "CLASSIFIED",
+        "displayValue" : "Klasifikovaný",
+        "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1000535",
+      "signalCreationDate" : "2016-03-17T14:33:30Z",
+      "actionPlanChangeDate" : "2016-03-17T14:34:32Z",
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000535?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "signalId" : "EWS1000534",
+      "signalType" : {
+        "code" : "T011",
+        "displayValue" : "Změny ve statusu klienta",
+        "entity" : null,
+        "name" : "CB_EarlyWarningSignalType"
+      },
+      "riskClassification" : {
+        "code" : "EW2",
+        "displayValue" : "EW2",
+        "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "signalStatus" : {
+        "code" : "CLASSIFIED",
+        "displayValue" : "Klasifikovaný",
+        "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+        "finalni" : false,
+        "name" : "CB_EarlyWarningSignalStatus"
+      },
+      "signalDescription" : "Commexim Group a.s. IČ: 27133222 ID signálu: EWS1000534",
+      "signalCreationDate" : "2016-03-17T14:28:46Z",
+      "actionPlanChangeDate" : "2016-03-17T14:29:52Z",
+      "actionPlanSignal" : null,
+      "cluid" : null,
+      "taskId" : null,
+      "clientName" : null,
+      "organizationUnit" : null,
+      "resolverRole" : null,
+      "taskType" : null,
+      "taskPresentationType" : null,
+      "taskStatus" : null,
+      "taskUserFirstName" : null,
+      "taskUserLastName" : null,
+      "createdDate" : null,
+      "dueDate" : null,
+      "latestAssigningDate" : null,
+      "actionPlanDueDate" : null,
+      "taskSignal" : false,
+      "_links" : {
+        "signalDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000534?backUrl=aHR0cDovL2xvY2FsaG9zdDo4ODg4L2NtdC1mZS9hcGkvY2xpZW50cy85MDA4LTAzLTA1LTE4LjUzLjIzLjI4MzM3Ni9zaWduYWxzP3NvcnQ9U2lnbmFsSWQmYXNjPWZhbHNlJnBhZ2VOdW1iZXI9MSZwYWdlU2l6ZT0xMDA=",
+          "allow" : "GET"
+        }
+      }
+    } ],
+    "searchCriteria" : null,
+    "activePage" : "1",
+    "activeLimit" : "100",
+    "totalItems" : null,
+    "activeSort" : "SignalId",
+    "activeAsc" : false,
+    "_links" : {
+      "clientSearch" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/search?useRedirect=false",
+        "allow" : "POST"
+      },
+      "limit010" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?refresh=false&sort=SignalId&asc=false&pageSize=10",
+        "allow" : "GET",
+        "title" : "10"
+      },
+      "limit020" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?refresh=false&sort=SignalId&asc=false&pageSize=20",
+        "allow" : "GET",
+        "title" : "20"
+      },
+      "limit050" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?refresh=false&sort=SignalId&asc=false&pageSize=50",
+        "allow" : "GET",
+        "title" : "50"
+      },
+      "limit100" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?refresh=false&sort=SignalId&asc=false&pageSize=100",
+        "allow" : "GET",
+        "title" : "100"
+      },
+      "page001" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?refresh=false&sort=SignalId&asc=false&pageNumber=1&pageSize=100",
+        "allow" : "GET",
+        "title" : "1"
+      },
+      "signalSearch" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/search",
+        "allow" : "POST"
+      },
+      "sortActionPlanChangeDate" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?sort=ActionPlanChangeDate&pageSize=100",
+        "allow" : "GET"
+      },
+      "sortRiskClassification" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?sort=RiskClassification&pageSize=100",
+        "allow" : "GET"
+      },
+      "sortSignalCreationDate" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?sort=SignalCreationDate&pageSize=100",
+        "allow" : "GET"
+      },
+      "sortSignalId" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?sort=SignalId&asc=true&pageSize=100",
+        "allow" : "GET"
+      }
+    }
+  },
+  "_links" : {
+    "clientDetail" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376",
+      "allow" : "GET"
+    },
+    "clientDetailRefresh" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals?refresh=true",
+      "allow" : "GET"
+    },
+    "clientHistory" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/history",
+      "allow" : "GET"
+    },
+    "clientSignals" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/9008-03-05-18.53.23.283376/signals",
+      "allow" : "GET"
+    },
+    "deeplinkCognosOverview" : {
+      "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2704%20Overwiew%20klienta%27%5d&ui.name=04%20Overwiew%20klienta&run.outputFormat=spreadsheetML&p_p_CLUID=9008-03-05-18.53.23.283376&run.prompt=false",
+      "title" : "Overview"
+    },
+    "deeplinkCognosWatchlist" : {
+      "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2702%20Watch%20list%20note%27%5d&ui.name=02%20Watch%20list%20note&run.outputFormat=spreadsheetML&p_p_CLUID=9008-03-05-18.53.23.283376&run.prompt=false",
+      "title" : "Watchlist"
+    },
+    "deeplinkColman" : {
+      "href" : "http://colman-int.csint.cz/colman-online-web/displayPartner?partnerCluid=9008-03-05-18.53.23.283376",
+      "title" : "COLMAN"
+    },
+    "deeplinkDmx" : {
+      "href" : "http://taskspace.csint.cz/taskspace/cluid?cluid=9008-03-05-18.53.23.283376&loginname=ext96518",
+      "title" : "DMX"
+    }
+  }
+}

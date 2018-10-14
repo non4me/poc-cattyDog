@@ -1,0 +1,18 @@
+<div class="container" role="main">
+  <alerts></alerts>
+  <div class="row client-info">
+    <client-overview data="vm.data" links="vm.data._links"
+                     refresh-link="vm.data._links.clientDetailRefresh"
+                     refresh-data="vm.data" ng-if="vm.data"></client-overview>
+  </div>
+  <div class="container">
+    <ul class="nav nav-tabs ">
+      <li ng-repeat="tab in vm.tabs" ui-sref-active="active">
+        <a ui-sref="{{::tab.id}}({clientId: vm.clientId})">{{::tab.label }}</a>
+      </li>
+    </ul>
+    <div id="tab-content-wrapper" >
+      <div class="tab-content" ui-view></div>
+    </div>
+  </div>
+</div>

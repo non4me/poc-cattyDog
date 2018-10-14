@@ -1,0 +1,3667 @@
+{
+  "businessErrors" : null,
+  "headers" : null,
+  "items" : [ {
+    "businessErrors" : null,
+    "signalId" : "EWS1001579",
+    "signalType" : {
+      "code" : "T014",
+      "displayValue" : "Plnění podmínek BB",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-07-19-04.25.01.794765",
+    "taskId" : "urn:b4p2:124708",
+    "clientName" : "BRUNO RESTAURACE",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-29T15:34:59Z",
+    "dueDate" : "2016-05-03T15:34:58Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-07-19-04.25.01.794765",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001579?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:124708/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001536",
+    "signalType" : {
+      "code" : "T001",
+      "displayValue" : "Rating 7 nebo zhoršení IR",
+      "entity" : "ClientRating",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9007-06-02-05.49.34.644068",
+    "taskId" : "urn:b4p2:123793",
+    "clientName" : "A & A MARKETING s.r.o. v likvidaci",
+    "organizationUnit" : null,
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-29T14:30:09Z",
+    "dueDate" : "2016-05-03T14:30:07Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9007-06-02-05.49.34.644068",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001536?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:123793/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000951",
+    "signalType" : {
+      "code" : "T013",
+      "displayValue" : "Interní varování (EMUS)",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-22-05.57.32.195824",
+    "taskId" : "urn:b4p2:120729",
+    "clientName" : "AC DODÁVKY, s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-29T02:17:23Z",
+    "dueDate" : "2016-05-03T02:16:38Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-22-05.57.32.195824",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000951?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:120729/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001508",
+    "signalType" : {
+      "code" : "T014",
+      "displayValue" : "Plnění podmínek BB",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW3",
+      "displayValue" : "EW3",
+      "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2002-02-05-05.23.20.886332",
+    "taskId" : "urn:b4p2:120728",
+    "clientName" : "AUTA s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-29T02:17:23Z",
+    "dueDate" : "2016-05-03T02:16:39Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2002-02-05-05.23.20.886332",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001508?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:120728/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000928",
+    "signalType" : {
+      "code" : "T002",
+      "displayValue" : "Polhůtní pohledávky",
+      "entity" : "PastDueFacts",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2002-12-05-23.13.17.901628",
+    "taskId" : "urn:b4p2:117026",
+    "clientName" : "ACRIMONIA a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-28T02:03:35Z",
+    "dueDate" : "2016-05-02T02:02:14Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2002-12-05-23.13.17.901628",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000928?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:117026/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001384",
+    "signalType" : {
+      "code" : "T013",
+      "displayValue" : "Interní varování (EMUS)",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9010-05-04-14.06.00.052028",
+    "taskId" : "urn:b4p2:114362",
+    "clientName" : "Wistron InfoComm (Czech), s.r.o.",
+    "organizationUnit" : "HR0_50004300",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-26T09:07:55Z",
+    "dueDate" : "2016-04-28T09:07:53Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9010-05-04-14.06.00.052028",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001384?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:114362/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001452",
+    "signalType" : {
+      "code" : "T013",
+      "displayValue" : "Interní varování (EMUS)",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9014-04-19-05.42.22.140745",
+    "taskId" : "urn:b4p2:112497",
+    "clientName" : "BB Company s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-25T12:22:12Z",
+    "dueDate" : "2016-04-27T12:22:08Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9014-04-19-05.42.22.140745",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001452?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:112497/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000634",
+    "signalType" : {
+      "code" : "T005",
+      "displayValue" : "Exekuce nebo blokace na účtech",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-04-22-06.42.28.860682",
+    "taskId" : "urn:b4p2:109242",
+    "clientName" : "Balada Jan, Mgr., advokát",
+    "organizationUnit" : "HR0_50000290",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-23T02:17:25Z",
+    "dueDate" : "2016-04-26T02:16:43Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-04-22-06.42.28.860682",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000634?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:109242/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001304",
+    "signalType" : {
+      "code" : "T014",
+      "displayValue" : "Plnění podmínek BB",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2000-05-09-20.49.57.782176",
+    "taskId" : "urn:b4p2:103113",
+    "clientName" : "ANO, spol. s r. o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-21T09:14:27Z",
+    "dueDate" : "2016-04-25T09:14:26Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2000-05-09-20.49.57.782176",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001304?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:103113/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000629",
+    "signalType" : {
+      "code" : "T005",
+      "displayValue" : "Exekuce nebo blokace na účtech",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-04-22-06.42.28.860682",
+    "taskId" : "urn:b4p2:101233",
+    "clientName" : "Balada Jan, Mgr., advokát",
+    "organizationUnit" : "HR0_50000290",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-21T02:04:25Z",
+    "dueDate" : "2016-04-25T02:02:11Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-04-22-06.42.28.860682",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000629?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:101233/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000845",
+    "signalType" : {
+      "code" : "T004",
+      "displayValue" : "Pokles kreditních obratů na účtech klienta",
+      "entity" : "TurnoverFacts",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-03-09-16.53.04.138076",
+    "taskId" : "urn:b4p2:98574",
+    "clientName" : "AV MEDIA, a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-20T02:04:00Z",
+    "dueDate" : "2016-04-22T02:02:34Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-03-09-16.53.04.138076",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000845?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:98574/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001393",
+    "signalType" : {
+      "code" : "T013",
+      "displayValue" : "Interní varování (EMUS)",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9014-04-19-05.42.22.140745",
+    "taskId" : "urn:b4p2:98554",
+    "clientName" : "BB Company s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-20T02:04:00Z",
+    "dueDate" : "2016-04-22T02:02:34Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9014-04-19-05.42.22.140745",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001393?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:98554/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001331",
+    "signalType" : {
+      "code" : "T014",
+      "displayValue" : "Plnění podmínek BB",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2000-05-09-20.49.57.782176",
+    "taskId" : "urn:b4p2:98544",
+    "clientName" : "ANO, spol. s r. o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-20T02:04:00Z",
+    "dueDate" : "2016-04-22T02:02:34Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2000-05-09-20.49.57.782176",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001331?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:98544/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001351",
+    "signalType" : {
+      "code" : "T009",
+      "displayValue" : "Insolvence klienta",
+      "entity" : "Insolvenci",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9013-05-01-14.48.17.690677",
+    "taskId" : "urn:b4p2:97735",
+    "clientName" : "HANESCU TRADE S.R.O.",
+    "organizationUnit" : null,
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-19T11:42:51Z",
+    "dueDate" : "2016-04-21T11:42:49Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9013-05-01-14.48.17.690677",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001351?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:97735/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001293",
+    "signalType" : {
+      "code" : "T004",
+      "displayValue" : "Pokles kreditních obratů na účtech klienta",
+      "entity" : "TurnoverFacts",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2000-05-09-20.50.01.218256",
+    "taskId" : "urn:b4p2:95091",
+    "clientName" : "OTAVAN Třeboň a.s.",
+    "organizationUnit" : "HR0_50000283",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-18T08:11:17Z",
+    "dueDate" : "2016-04-20T08:11:15Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2000-05-09-20.50.01.218256",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001293?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:95091/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001347",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW3",
+      "displayValue" : "EW3",
+      "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-07-03.35.06.275827",
+    "taskId" : "urn:b4p2:88916",
+    "clientName" : "ECP a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-15T11:39:30Z",
+    "dueDate" : "2016-04-19T11:39:29Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-07-03.35.06.275827",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001347?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:88916/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001322",
+    "signalType" : {
+      "code" : "T013",
+      "displayValue" : "Interní varování (EMUS)",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9010-10-22-09.40.57.143556",
+    "taskId" : "urn:b4p2:86212",
+    "clientName" : "ALFA , družstvo software a služeb, družstvo v likvidaci",
+    "organizationUnit" : null,
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-14T14:36:55Z",
+    "dueDate" : "2016-04-18T14:36:54Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9010-10-22-09.40.57.143556",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001322?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:86212/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001320",
+    "signalType" : {
+      "code" : "T001",
+      "displayValue" : "Rating 7 nebo zhoršení IR",
+      "entity" : "ClientRating",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2000-05-09-20.50.01.218256",
+    "taskId" : "urn:b4p2:86122",
+    "clientName" : "OTAVAN Třeboň a.s.",
+    "organizationUnit" : "HR0_50000283",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-14T14:28:49Z",
+    "dueDate" : "2016-04-18T14:28:48Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2000-05-09-20.50.01.218256",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001320?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:86122/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000970",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW3",
+      "displayValue" : "EW3",
+      "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-22-05.57.32.195824",
+    "taskId" : "urn:b4p2:78589",
+    "clientName" : "AC DODÁVKY, s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-12T02:16:27Z",
+    "dueDate" : "2016-04-14T02:16:25Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-22-05.57.32.195824",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000970?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:78589/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000384",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2003-11-03-23.47.53.811960",
+    "taskId" : "urn:b4p2:78567",
+    "clientName" : "KABEL - A.T. spol. s r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-12T02:16:26Z",
+    "dueDate" : "2016-04-14T02:15:47Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2003-11-03-23.47.53.811960",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000384?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:78567/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000379",
+    "signalType" : {
+      "code" : "T013",
+      "displayValue" : "Interní varování (EMUS)",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2003-11-03-23.47.53.811960",
+    "taskId" : "urn:b4p2:78562",
+    "clientName" : "KABEL - A.T. spol. s r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-12T02:16:25Z",
+    "dueDate" : "2016-04-14T02:15:47Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2003-11-03-23.47.53.811960",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000379?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:78562/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000385",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2003-11-03-23.47.53.811960",
+    "taskId" : "urn:b4p2:78556",
+    "clientName" : "KABEL - A.T. spol. s r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení AP",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-12T02:16:25Z",
+    "dueDate" : "2016-04-14T02:15:47Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2003-11-03-23.47.53.811960",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000385?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:78556/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000628",
+    "signalType" : {
+      "code" : "T005",
+      "displayValue" : "Exekuce nebo blokace na účtech",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-04-22-06.42.28.860682",
+    "taskId" : "urn:b4p2:74694",
+    "clientName" : "Balada Jan, Mgr., advokát",
+    "organizationUnit" : "HR0_50000290",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-10T02:16:20Z",
+    "dueDate" : "2016-04-12T02:15:40Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-04-22-06.42.28.860682",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000628?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:74694/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001162",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9010-10-22-09.43.12.254118",
+    "taskId" : "urn:b4p2:70059",
+    "clientName" : "FVE Petrovice a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-07T12:31:43Z",
+    "dueDate" : "2016-04-11T12:31:42Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9010-10-22-09.43.12.254118",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001162?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:70059/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001157",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "8013-04-17-13.11.53.201252",
+    "taskId" : "urn:b4p2:69864",
+    "clientName" : "FASHION LAND s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-07T10:58:49Z",
+    "dueDate" : "2016-04-11T10:58:49Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/8013-04-17-13.11.53.201252",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001157?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:69864/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001145",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-07-19-04.25.04.795728",
+    "taskId" : "urn:b4p2:68534",
+    "clientName" : "AAA, s.r.o.",
+    "organizationUnit" : null,
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-07T08:28:38Z",
+    "dueDate" : "2016-04-11T08:28:38Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-07-19-04.25.04.795728",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001145?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:68534/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001140",
+    "signalType" : {
+      "code" : "T014",
+      "displayValue" : "Plnění podmínek BB",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-07-03.35.06.275827",
+    "taskId" : "urn:b4p2:67493",
+    "clientName" : "ECP a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-06T15:18:41Z",
+    "dueDate" : "2016-04-08T15:18:40Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-07-03.35.06.275827",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001140?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:67493/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001139",
+    "signalType" : {
+      "code" : "T014",
+      "displayValue" : "Plnění podmínek BB",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-07-03.35.06.275827",
+    "taskId" : "urn:b4p2:67473",
+    "clientName" : "ECP a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-06T15:17:07Z",
+    "dueDate" : "2016-04-08T15:17:06Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-07-03.35.06.275827",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001139?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:67473/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001135",
+    "signalType" : {
+      "code" : "T014",
+      "displayValue" : "Plnění podmínek BB",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-07-03.35.06.275827",
+    "taskId" : "urn:b4p2:67348",
+    "clientName" : "ECP a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-06T15:12:44Z",
+    "dueDate" : "2016-04-08T15:12:43Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-07-03.35.06.275827",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001135?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:67348/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001124",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-07-03.35.06.275827",
+    "taskId" : "urn:b4p2:64356",
+    "clientName" : "ECP a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-05T16:04:48Z",
+    "dueDate" : "2016-04-07T16:04:47Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-07-03.35.06.275827",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001124?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:64356/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001034",
+    "signalType" : {
+      "code" : "T001",
+      "displayValue" : "Rating 7 nebo zhoršení IR",
+      "entity" : "ClientRating",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9012-09-25-03.07.36.193058",
+    "taskId" : "urn:b4p2:62586",
+    "clientName" : "SNECER spol. s r.o.",
+    "organizationUnit" : null,
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-05T08:48:49Z",
+    "dueDate" : "2016-04-07T08:48:46Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9012-09-25-03.07.36.193058",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001034?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:62586/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001029",
+    "signalType" : {
+      "code" : "T001",
+      "displayValue" : "Rating 7 nebo zhoršení IR",
+      "entity" : "ClientRating",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9014-06-21-13.42.00.581891",
+    "taskId" : "urn:b4p2:62554",
+    "clientName" : "ALPHACOAL SE",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-05T07:29:13Z",
+    "dueDate" : "2016-04-07T07:29:11Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9014-06-21-13.42.00.581891",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001029?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:62554/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001021",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-22-05.57.32.195824",
+    "taskId" : "urn:b4p2:61308",
+    "clientName" : "AC DODÁVKY, s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-04T15:10:20Z",
+    "dueDate" : "2016-04-06T15:10:19Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-22-05.57.32.195824",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001021?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:61308/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001090",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9004-10-05-16.40.09.512190",
+    "taskId" : "urn:b4p2:60499",
+    "clientName" : "DATA AUTOTRANS s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-04T12:17:34Z",
+    "dueDate" : "2016-04-06T12:17:34Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9004-10-05-16.40.09.512190",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001090?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:60499/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001088",
+    "signalType" : {
+      "code" : "T013",
+      "displayValue" : "Interní varování (EMUS)",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9004-10-05-16.40.09.512190",
+    "taskId" : "urn:b4p2:60336",
+    "clientName" : "DATA AUTOTRANS s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-04T12:05:40Z",
+    "dueDate" : "2016-04-06T12:05:39Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9004-10-05-16.40.09.512190",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001088?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:60336/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001001",
+    "signalType" : {
+      "code" : "T014",
+      "displayValue" : "Plnění podmínek BB",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-22-05.57.32.195824",
+    "taskId" : "urn:b4p2:56301",
+    "clientName" : "AC DODÁVKY, s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-01T13:11:53Z",
+    "dueDate" : "2016-04-05T13:11:52Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-22-05.57.32.195824",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001001?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:56301/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1001016",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-08-22-05.57.32.195824",
+    "taskId" : "urn:b4p2:54775",
+    "clientName" : "AC DODÁVKY, s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-01T08:20:10Z",
+    "dueDate" : "2016-04-05T08:20:06Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-08-22-05.57.32.195824",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1001016?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:54775/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000844",
+    "signalType" : {
+      "code" : "T004",
+      "displayValue" : "Pokles kreditních obratů na účtech klienta",
+      "entity" : "TurnoverFacts",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW3",
+      "displayValue" : "EW3",
+      "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-03-09-16.53.04.138076",
+    "taskId" : "urn:b4p2:54285",
+    "clientName" : "AV MEDIA, a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-01T02:16:05Z",
+    "dueDate" : "2016-04-05T02:15:26Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-03-09-16.53.04.138076",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000844?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:54285/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000633",
+    "signalType" : {
+      "code" : "T005",
+      "displayValue" : "Exekuce nebo blokace na účtech",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-04-22-06.42.28.860682",
+    "taskId" : "urn:b4p2:54286",
+    "clientName" : "Balada Jan, Mgr., advokát",
+    "organizationUnit" : "HR0_50000290",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-01T02:16:05Z",
+    "dueDate" : "2016-04-05T02:15:26Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-04-22-06.42.28.860682",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000633?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:54286/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000630",
+    "signalType" : {
+      "code" : "T005",
+      "displayValue" : "Exekuce nebo blokace na účtech",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-04-22-06.42.28.860682",
+    "taskId" : "urn:b4p2:54284",
+    "clientName" : "Balada Jan, Mgr., advokát",
+    "organizationUnit" : "HR0_50000290",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-04-01T02:16:05Z",
+    "dueDate" : "2016-04-05T02:15:26Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-04-22-06.42.28.860682",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000630?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:54284/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000840",
+    "signalType" : {
+      "code" : "T004",
+      "displayValue" : "Pokles kreditních obratů na účtech klienta",
+      "entity" : "TurnoverFacts",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW3",
+      "displayValue" : "EW3",
+      "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-03-09-16.53.04.138076",
+    "taskId" : "urn:b4p2:43541",
+    "clientName" : "AV MEDIA, a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-24T10:04:42Z",
+    "dueDate" : "2016-03-29T09:04:41Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-03-09-16.53.04.138076",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000840?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:43541/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000448",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9004-04-24-13.39.34.136141",
+    "taskId" : "urn:b4p2:42253",
+    "clientName" : "ADI CZECH S.R.O.",
+    "organizationUnit" : "HR0_50000290",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-23T17:55:12Z",
+    "dueDate" : "2016-03-29T16:55:11Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9004-04-24-13.39.34.136141",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000448?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:42253/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000461",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2003-11-03-23.47.53.811960",
+    "taskId" : "urn:b4p2:42252",
+    "clientName" : "KABEL - A.T. spol. s r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-23T17:55:12Z",
+    "dueDate" : "2016-03-29T16:55:11Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2003-11-03-23.47.53.811960",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000461?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:42252/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000722",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-10-10-09.50.10.155284",
+    "taskId" : "urn:b4p2:41272",
+    "clientName" : "BB Pharma a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-23T14:28:06Z",
+    "dueDate" : "2016-03-29T13:28:05Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-10-10-09.50.10.155284",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000722?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:41272/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000803",
+    "signalType" : {
+      "code" : "T010",
+      "displayValue" : "Využívání KTK",
+      "entity" : "OverdraftFacts",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9010-10-22-09.59.57.675974",
+    "taskId" : "urn:b4p2:41260",
+    "clientName" : "AMADEUS, s.r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-23T14:27:36Z",
+    "dueDate" : "2016-03-29T13:27:35Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9010-10-22-09.59.57.675974",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000803?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:41260/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000643",
+    "signalType" : {
+      "code" : "T005",
+      "displayValue" : "Exekuce nebo blokace na účtech",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-05-21-07.44.48.126108",
+    "taskId" : "urn:b4p2:32778",
+    "clientName" : "Certus Mercatus, s.r.o.",
+    "organizationUnit" : "HR0_50000290",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-19T10:59:14Z",
+    "dueDate" : "2016-03-21T10:59:13Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-05-21-07.44.48.126108",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000643?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:32778/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000638",
+    "signalType" : {
+      "code" : "T005",
+      "displayValue" : "Exekuce nebo blokace na účtech",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9008-04-22-06.42.28.860682",
+    "taskId" : "urn:b4p2:32522",
+    "clientName" : "Balada Jan, Mgr., advokát",
+    "organizationUnit" : "HR0_50000290",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-19T10:25:43Z",
+    "dueDate" : "2016-03-21T10:25:42Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9008-04-22-06.42.28.860682",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000638?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:32522/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000606",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2001-11-16-22.23.16.179368",
+    "taskId" : "urn:b4p2:30960",
+    "clientName" : "UNICORN Bohemia s.r.o.",
+    "organizationUnit" : null,
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-18T16:57:45Z",
+    "dueDate" : "2016-03-21T16:57:44Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2001-11-16-22.23.16.179368",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000606?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:30960/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000568",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9010-10-22-09.44.59.318692",
+    "taskId" : "urn:b4p2:29303",
+    "clientName" : "A & H PRAGUE,s.r.o.",
+    "organizationUnit" : null,
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-18T10:16:40Z",
+    "dueDate" : "2016-03-21T10:16:39Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9010-10-22-09.44.59.318692",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000568?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:29303/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000313",
+    "signalType" : {
+      "code" : "T009",
+      "displayValue" : "Insolvence klienta",
+      "entity" : "Insolvenci",
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-10-10-09.50.10.155284",
+    "taskId" : "urn:b4p2:29105",
+    "clientName" : "BB Pharma a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-18T10:00:09Z",
+    "dueDate" : "2016-03-21T10:00:08Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-10-10-09.50.10.155284",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000313?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:29105/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000456",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CLASSIFIED",
+      "displayValue" : "Klasifikovaný",
+      "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2003-11-03-23.47.53.811960",
+    "taskId" : "urn:b4p2:25219",
+    "clientName" : "KABEL - A.T. spol. s r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Evaluate",
+      "displayValue" : "Vyhodnocení AP",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Vyhodnocení akčního plánu",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-16T16:28:37Z",
+    "dueDate" : "2016-03-18T16:28:36Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2003-11-03-23.47.53.811960",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000456?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:25219/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000400",
+    "signalType" : {
+      "code" : "T011",
+      "displayValue" : "Změny ve statusu klienta",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW1",
+      "displayValue" : "EW1",
+      "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "9006-10-10-09.50.10.155284",
+    "taskId" : "urn:b4p2:25143",
+    "clientName" : "BB Pharma a.s.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "2",
+      "displayValue" : "reserved",
+      "ewsCmtName" : "Čeká na zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-16T15:29:48Z",
+    "dueDate" : "2016-03-18T15:29:47Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/9006-10-10-09.50.10.155284",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000400?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:25143/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000450",
+    "signalType" : {
+      "code" : "T013",
+      "displayValue" : "Interní varování (EMUS)",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "CAPTURED",
+      "displayValue" : "Zachycený",
+      "description" : "Signál je zachycený a předaný na řešení uživateli.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2003-11-03-23.47.53.811960",
+    "taskId" : "urn:b4p2:23276",
+    "clientName" : "KABEL - A.T. spol. s r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Validate",
+      "displayValue" : "Validace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Validace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-16T09:47:58Z",
+    "dueDate" : "2016-03-18T09:47:57Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2003-11-03-23.47.53.811960",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000450?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:23276/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  }, {
+    "businessErrors" : null,
+    "signalId" : "EWS1000422",
+    "signalType" : {
+      "code" : "T008",
+      "displayValue" : "Negativní informace",
+      "entity" : null,
+      "name" : "CB_EarlyWarningSignalType"
+    },
+    "riskClassification" : {
+      "code" : "EW2",
+      "displayValue" : "EW2",
+      "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+      "validForClient" : true,
+      "validForSignal" : true,
+      "name" : "CB_RiskClassification"
+    },
+    "signalStatus" : {
+      "code" : "VALIDATED",
+      "displayValue" : "Validovaný",
+      "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+      "finalni" : false,
+      "name" : "CB_EarlyWarningSignalStatus"
+    },
+    "signalDescription" : null,
+    "signalCreationDate" : null,
+    "actionPlanChangeDate" : null,
+    "actionPlanSignal" : null,
+    "cluid" : "2003-11-03-23.47.53.811960",
+    "taskId" : "urn:b4p2:22111",
+    "clientName" : "KABEL - A.T. spol. s r.o.",
+    "organizationUnit" : "HR0_50000289",
+    "resolverRole" : null,
+    "taskType" : {
+      "code" : "CMT_Classify",
+      "displayValue" : "Klasifikace",
+      "name" : "CB_TaskType"
+    },
+    "taskPresentationType" : "Klasifikace",
+    "taskStatus" : {
+      "code" : "3",
+      "displayValue" : "in progress",
+      "ewsCmtName" : "Ve zpracování",
+      "name" : "CB_TaskStatus"
+    },
+    "taskUserFirstName" : "Rudolf",
+    "taskUserLastName" : "Stolař",
+    "createdDate" : "2016-03-15T14:48:27Z",
+    "dueDate" : "2016-03-17T14:48:26Z",
+    "latestAssigningDate" : null,
+    "actionPlanDueDate" : null,
+    "taskSignal" : false,
+    "_links" : {
+      "clientDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/clients/2003-11-03-23.47.53.811960",
+        "allow" : "GET"
+      },
+      "signalDetail" : {
+        "href" : "http://localhost:8888/cmt-fe/api/signals/EWS1000422?refresh=false",
+        "allow" : "GET"
+      },
+      "taskTakeOver" : {
+        "href" : "http://localhost:8888/cmt-fe/api/tasks/urn:b4p2:22111/takeover?waitForConfirmation=true",
+        "allow" : "POST"
+      }
+    }
+  } ],
+  "searchCriteria" : null,
+  "activePage" : "1",
+  "activeLimit" : "100",
+  "totalItems" : "54",
+  "activeSort" : "CreatedDate",
+  "activeAsc" : false,
+  "_links" : {
+    "filterRecords" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=CreatedDate&asc=false&pageNumber=1&pageSize=100&filter=",
+      "allow" : "GET",
+      "title" : "filterRecords"
+    },
+    "limit010" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=CreatedDate&asc=false&pageSize=10",
+      "allow" : "GET",
+      "title" : "10"
+    },
+    "limit020" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=CreatedDate&asc=false&pageSize=20",
+      "allow" : "GET",
+      "title" : "20"
+    },
+    "limit050" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=CreatedDate&asc=false&pageSize=50",
+      "allow" : "GET",
+      "title" : "50"
+    },
+    "limit100" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=CreatedDate&asc=false&pageSize=100",
+      "allow" : "GET",
+      "title" : "100"
+    },
+    "page001" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=CreatedDate&asc=false&pageNumber=1&pageSize=100",
+      "allow" : "GET",
+      "title" : "1"
+    },
+    "searchCommon" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/common/search",
+      "allow" : "POST"
+    },
+    "searchPlanned" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/planned/search",
+      "allow" : "POST"
+    },
+    "searchPrivate" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search",
+      "allow" : "POST"
+    },
+    "sortActionPlanDueDate" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=ActionPlanDueDate&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortClientName" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=ClientName&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortCreatedDate" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=CreatedDate&asc=true&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortDueDate" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=DueDate&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortResolverRole" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=ResolverRole&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortRiskClassification" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=RiskClassification&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortSignalDescription" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=SignalDescription&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortSignalId" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=SignalId&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortSignalType" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=SignalType&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortTaskResolver" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=TaskResolver&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortTaskStatus" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=TaskStatus&pageSize=100",
+      "allow" : "GET"
+    },
+    "sortTaskType" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/private/search/27fd2c12-4425-4604-800a-351a91b5a246?sort=TaskType&pageSize=100",
+      "allow" : "GET"
+    }
+  }
+}

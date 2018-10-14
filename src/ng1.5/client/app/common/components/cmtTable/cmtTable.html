@@ -1,0 +1,46 @@
+<div class="cmt-table">
+  <TABLE-FILTER ng-if="!vm.hideFilter"></TABLE-FILTER>
+  <table class="table" ng-class="vm.tableClass">
+    <thead>
+    <tr>
+      <th ng-repeat="column in vm.tableHeader" ng-class="'header-'+ column.headerClass">
+        <!-- sortable header -->
+          <span ng-if="column.sort">
+              <!-- data router link -->
+              <a class='pointer' ng-click="vm.sortBy(column)">
+                  <div class="table-header">
+                      <span>{{ column.columnName }}</span>
+                      <span class="icon-sort">
+                        <i ng-class="{
+                        'sort-asc': vm.sortDerection[column.name],
+                        'sort-desc': !vm.sortDerection[column.name]
+                        }"></i>
+                      </span>
+                  </div>
+              </a>
+            </span>
+
+        <!-- unsortable header -->
+          <span ng-if="!column.sort">
+              {{ column.columnName }}
+          </span>
+      </th>
+    </tr>
+    </thead>
+
+    <tr ng-repeat="record in vm.filteredData">
+      <td ng-repeat="column in vm.tableHeader"
+          ng-class="'column-'+ column.type +' '+ vm.getRecordClass(record) +' '+ column.cellClass">
+        <TABLE-DATA-PRESENTER column="column" record="record"></TABLE-DATA-PRESENTER>
+      </td>
+    </tr>
+    <tr ng-if="!vm.filteredData.length">
+      <td ng-attr-colspan="{{vm.tableHeader.length}}">
+        {{::vm.tableEmpty}}
+      </td>
+    </tr>
+  </table>
+
+  <TABLE-PAGINATION ng-hide="vm.hidePagination" ng-if="vm.data.items" data-sort="vm.sort"
+                    raw-data-in="vm.data.items" table-data-out="vm.filteredData"></TABLE-PAGINATION>
+</div>

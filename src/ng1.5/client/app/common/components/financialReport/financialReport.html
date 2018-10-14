@@ -1,0 +1,27 @@
+<table class="table table-bordered table-sm" ng-if="vm.data.headers.length !== 0">
+  <thead>
+  <tr>
+    <th>Financial Indicator</th>
+    <th ng-repeat="header in vm.data.headers" class="header-column" ng-bind-html="header | space2br"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="fixedRow in vm.fixedRows">
+    <th class="header-row"> {{::fixedRow.label}} </th>
+    <td ng-repeat="item in vm.data.rows[fixedRow.key] track by $index" class="record"
+        ng-class="{'number': fixedRow.formatFilter == 'ewsNumber'}">
+      {{ item | ewsFilter: fixedRow.formatFilter }}
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<table class="table table-bordered" ng-if="vm.data.headers.length == 0">
+  <tbody>
+  <tr>
+    <td>
+      Žádné finanční výkazy nebyly nalezeny.
+    </td>
+  </tr>
+  </tbody>
+</table>

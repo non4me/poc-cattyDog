@@ -1,0 +1,123 @@
+<div class="container" role="main">
+  <alerts severity="E"></alerts>
+
+  <div class="page-header">
+    <h1>Vyhledávání klienta</h1>
+  </div>
+  <form ng-submit="vm.searchClients(this)" name="clientSearchForm" class="form-search">
+    <div class="row grey-bg search-form">
+      <div class="form-group col-xs-3" tooltip-error="clientName"
+           tooltip-error-data="{minlength: vm.nameMinLength, maxlength: vm.nameMaxLength}">
+        <label for="clientName">Název klienta / skupiny
+                    <span class="icon-info tooltip-info" tooltip placement="top"
+                          data-title="Vyplňte alespoň první tři znaky názvu hledaného klienta / skupiny. Vyhledávání není citlivé na velikost písmen a diakritiku."></span>
+        </label>
+        <input type="text" class="form-control" value=""
+               ng-disabled="vm.isSet('registrationNumber', 'cluid')"
+               ng-minlength="{{::vm.nameMinLength}}"
+               required-any="clientIdentifier"
+               ng-maxlength="{{::vm.nameMaxLength}}"
+               maxlength="{{::vm.nameMaxLength+1}}"
+               name="clientName" id="clientName"
+               ng-model="vm.searchCriteria.name">
+      </div>
+      <div class="form-group col-xs-3" tooltip-error="registrationNumber"
+           tooltip-error-data="{maxlength: vm.icMaxLength}">
+        <label for="registrationNumber">IČ klienta
+                    <span class="icon-info tooltip-info" tooltip placement="top"
+                          data-title="Vyplňte celé tuzemské či zahraniční identifikační číslo hledané právnické osoby. Vyhledávání dle části IČ není podporováno."></span>
+        </label>
+        <input type="text" class="form-control"
+               ng-disabled="vm.searchType === 'esso' || vm.isSet('name', 'cluid')"
+               required-any="clientIdentifier"
+               ng-maxlength="{{::vm.icMaxLength}}"
+               maxlength="{{::vm.icMaxLength+1}}"
+               name="registrationNumber" id="registrationNumber"
+               ng-model="vm.searchCriteria.registrationNumber">
+      </div>
+      <div class="form-group col-xs-3" tooltip-error="cluid"
+           tooltip-error-data="{maxlength: vm.cluidMaxLength}">
+        <label for="CLUID">CLUID klienta / skupiny
+                    <span class="icon-info tooltip-info" tooltip placement="top"
+                          data-title="Vyplňte celý identifikátor CLUID klienta z evidence firem v CRM nebo CLUID Esso skupiny."></span>
+        </label>
+        <input type="text" class="form-control" id="CLUID"
+               ng-disabled="vm.isSet('registrationNumber', 'name')"
+               ng-maxlength="{{::vm.cluidMaxLength}}"
+               maxlength="{{::vm.cluidMaxLength+1}}"
+               required-any="clientIdentifier"
+               name="cluid" ng-model="vm.searchCriteria.cluid">
+      </div>
+      <div class="form-group col-xs-3">
+        <div class="radio">
+          <label>
+            <input type="radio" name="vm.searchType" id="vyhledavani1"
+                   ng-model="vm.searchType"
+                   ng-change="vm.changeSearchType()" value="pofop" checked>
+            <span>Vyhledávání klientů (PO/FOP)</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="vm.searchType" id="vyhledavani2"
+                   ng-model="vm.searchType"
+                   ng-change="vm.changeSearchType()" value="esso">
+            <span>Vyhledávání ESSO skupin</span>
+          </label>
+        </div>
+      </div>
+      <div ng-show="vm.searchType == 'pofop'">
+        <div class="col-xs-3">
+          <label>
+            Pouze klienti s klasifikací
+                        <span class="icon-info tooltip-info" tooltip placement="top"
+                              data-title="Výsledek hledání z evidence firem v CRM bude dále omezen na klienty s aktuální schválenou klasifikací odpovídající zaškrtnutým hodnotám. Pokud není zaškrtnuta žádná z hodnot, výsledek hledání ze CRM nebude dále filtrován."></span>
+          </label>
+        </div>
+        <div class="col-xs-9">
+          <label class="checkbox-inline" ng-repeat="riskClassification in vm.riskClassifications">
+            <input type="checkbox" ng-attr-id="{{::riskClassification.code}}"
+                   ng-model="vm.selectedClassifications[riskClassification.code]">
+            {{::riskClassification.displayValue}}
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="all" value="" ng-model="vm.checkAll" ng-click="vm.clickAll()"> Označit vše
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row buttons">
+      <div class="col-xs-12">
+        <input type="submit" class="btn btn-wide" ng-disabled="clientSearchForm.$invalid" value="Hledat" id="search">
+
+        <a href="" ng-click="vm.resetFilter()" class="reset-link">Vynulovat nastavení</a>
+      </div>
+    </div>
+    <!-- system alerts -->
+    <div class="row">
+      <alerts severity="W" no-sticky></alerts>
+    </div>
+  </form>
+
+  <!-- results -->
+  <div class="row ">
+    <div id="search-result" class="search-results">
+      <CMT-TABLE ng-if="vm.data.items != null"
+                 hide-filter = "true"
+                 data-table-header="vm.searchType !== 'esso' ? vm.tablePoHeader : vm.tableEssoHeader"
+                 table-class="table-bordered"
+                 data-data="vm.data"
+                 table-empty="Dle zadaných kriterií vyhledávání se nepodařilo nalézt žádný záznam.">
+      </CMT-TABLE>
+    </div>
+    <div class="col-xs-12">
+      <!-- TODO: _link -->
+      <div ng-if="vm.data.items.length > 0 && !loading">
+        <button-export ng-if="vm.data._links.clientSearchExport.href"
+                       src="vm.data._links.clientSearchExport.href"></button-export>
+        <button-export ng-if="vm.data._links.essoGroupSearchExport.href"
+                       src="vm.data._links.essoGroupSearchExport.href"></button-export>
+      </div>
+    </div>
+  </div>
+</div> <!-- /container -->

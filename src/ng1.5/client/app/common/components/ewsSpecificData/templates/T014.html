@@ -1,0 +1,79 @@
+<div class="col-xs-6">
+    <table class="table table-transparent table-sm table-striped-cols-right">
+        <tbody>
+        <tr>
+            <td>Objem zastavených pohledávek ve sledovaném měsíci (CZK) *</td>
+            <td tooltip-error="pledgeReceivableSumCZK">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  name="pledgeReceivableSumCZK"
+                                  ng-model="vm.model.pledgeReceivableSumCZK"
+                                  type="inputCurrency"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        <tr>
+            <td>Objem očekávaných plateb z pohledávek ve sledovaném měsíci (CZK) *</td>
+            <td tooltip-error="expectedReceivableSumCZK">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  name="expectedReceivableSumCZK"
+                                  ng-model="vm.model.expectedReceivableSumCZK"
+                                  type="inputCurrency"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        <tr>
+            <td>Objem skutečných plateb ze zastavených pohledávek ve sledovaném měsíci (CZK) *</td>
+            <td tooltip-error="carriedOutReceivableSumCZK">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  name="carriedOutReceivableSumCZK"
+                                  ng-model="vm.model.carriedOutReceivableSumCZK"
+                                  type="inputCurrency"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="col-xs-6">
+    <table class="table table-transparent table-sm table-striped-cols-right">
+        <tbody>
+        <tr>
+            <td>Skutečné platby (%) *</td>
+            <td tooltip-error="carriedOutReceivablesPct">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  name="carriedOutReceivablesPct"
+                                  ng-model="vm.model.carriedOutReceivablesPct"
+                                  type="inputPercentage"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        <tr>
+            <td>Spárované platby (%) *</td>
+            <td tooltip-error="matchedReceivablesPct">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  name="matchedReceivablesPct"
+                                  ng-model="vm.model.matchedReceivablesPct"
+                                  type="inputPercentage"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        <tr ng-if="vm.formControlMode == 'view'">
+            <td>Aktuální období *</td>
+            <td tooltip-error="pledgeReceivablesFactToDate">
+                {{vm.model.pledgeReceivablesFactToDate | date: 'MM/yyyy'}}
+            </td>
+        </tr>
+        <tr ng-if="vm.formControlMode == 'edit'">
+            <td>Aktuální období *</td>
+            <td tooltip-error="pledgeReceivablesFactToDate">
+                <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                  name="pledgeReceivablesFactToDate"
+                                  ng-model="vm.model.pledgeReceivablesFactToDate"
+                                  type="datepicker"
+                                  require="true"></EWS-FORM-CONTROL>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

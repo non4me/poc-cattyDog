@@ -1,0 +1,35 @@
+{
+  "businessErrors" : null,
+  "name" : "Ondřej Kučera",
+  "login" : "ext96518",
+  "version" : "1.11.0-SNAPSHOT",
+  "mwUrl" : "https://osb-st2.vs.csin.cz:5001",
+  "allowedOperations": {
+    "main": ["tasks", "clients", "signals", "products", "controls", "quickSearch"],
+    "tasks": ["searchCommon", "searchPlanned", "searchPrivate"],
+    "clients": ["clientSearch", "essoGroupSearch"],
+    "signals": ["clientSearch", "signalSearch"]
+  },
+  "_links" : {
+    "clients" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/index",
+      "allow" : "GET"
+    },
+    "codebooks" : {
+      "href" : "http://localhost:8888/cmt-fe/api/codebooks?codebookName=CB_RiskClassification&codebookName=CB_EarlyWarningSignalType&codebookName=CB_EarlyWarningSignalSubType&codebookName=CB_EarlyWarningSignalStatus&codebookName=CB_FscsClientRating&codebookName=CB_D4Sector&codebookName=CB_EwsDetectionMethod&codebookName=CB_AccountReservationType&codebookName=CB_TaskType&codebookName=CB_TaskStatus&codebookName=CB_EwsProcessRole&codebookName=CB_CMTContractualTermType&codebookName=CB_AlertCategory&codebookName=CB_ClientAlertType",
+      "allow" : "GET"
+    },
+    "quickSearch" : {
+      "href" : "http://localhost:8888/cmt-fe/api/quickSearch",
+      "allow" : "POST"
+    },
+    "signals" : {
+      "href" : "http://localhost:8888/cmt-fe/api/signals/index",
+      "allow" : "GET"
+    },
+    "tasks" : {
+      "href" : "http://localhost:8888/cmt-fe/api/tasks/index",
+      "allow" : "GET"
+    }
+  }
+}

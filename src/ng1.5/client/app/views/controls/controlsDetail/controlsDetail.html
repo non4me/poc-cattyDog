@@ -1,0 +1,186 @@
+<div class="container" role="main">
+  <alerts></alerts>
+
+  <div class="page-header">
+    <h1>Kontroly</h1>
+  </div>
+  <ng-form name="vm.signalDetailForm">
+    <div class="container-white">
+      <div class="row client-info">
+        <CLIENT-OVERVIEW template="detailed"
+                         data="vm.data.client"
+                         collapsible="true"
+                         links="vm.data.client._links"></CLIENT-OVERVIEW>
+      </div>
+
+      <div class="row">
+        <div class="block-header">
+          <h3>Navazané produkty</h3>
+        </div>
+        <div class="col-xs-12">
+          <CMT-TABLE data-table-header="vm.productsTableHeader"
+                     hide-filter = "true"
+                     data="vm.data.client.productItems"
+                     table-empty="Seznam neobsahuje žádnou položku."></CMT-TABLE>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="block-header">
+          <h3>Detail produktu </h3>
+        </div>
+        <div class="col-xs-5">
+          <table class="table table-transparent  table-striped-cols-right">
+            <tbody>
+            <tr>
+              <td>Číslo zástavní smlouvy</td>
+              <td>123</td>
+            </tr>
+            <tr>
+              <td>Dodatek č.</td>
+              <td>123</td>
+            </tr>
+            <tr>
+              <td>Typ zajištění</td>
+              <td>displatValue</td>
+            </tr>
+            <tr>
+              <td>Datm podpisu ZS</td>
+              <td>| ewsDate</td>
+            </tr>
+            <tr>
+              <td>Datum splatnosti ÚS</td>
+              <td>| ewsDate</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-4">
+          <table class="table table-transparent  table-striped-cols-right">
+            <tbody>
+            <tr>
+              <td>EZP</td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>Typ produktu</td>
+              <td>displayValue</td>
+            </tr>
+            <tr>
+              <td>Stav produktu</td>
+              <td>displayValue</td>
+            </tr>
+            <tr>
+              <td>Status produktu</td>
+              <td>
+                <i ews-icon="" class="ews-icon"
+                   data-container="body"></i>
+                | displayValue
+              </td>
+            </tr>
+            <tr>
+              <td>Datum datum udělení výjimky ředitele</td>
+              <td>| ewsDate</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="block-header">
+          <h3>Zajistene produkty</h3>
+        </div>
+        <div class="col-xs-6">
+          <table class="table table-transparent  table-striped-cols-right">
+            <tbody>
+            <tr>
+              <td>Celkem schválená výše</td>
+              <td>' ewsCurrency</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-12">
+          <CMT-TABLE header-type="control_detail_fcs_history_header"
+                     hide-filter = "true"
+                     data-data="vm.data.client.productItems"
+                     table-empty="Seznam neobsahuje žádnou položku."></CMT-TABLE>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="block-header">
+          <h3>Poznamka k produktu </h3>
+        </div>
+        <div class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, enim, aut.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, enim, aut.Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Inventore, enim, aut.Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Inventore, enim, aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Inventore, enim, aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, enim,
+          aut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, enim, aut.Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit. Inventore, enim, aut.Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit.
+        </div>
+      </div>
+      <div class="row">
+        <div class="block-header">
+          <h3>Specifická pole kontroly</h3>
+        </div>
+        <!--  <form class="col-xs-12">
+              <ews-specific-data form-control-mode="view"
+                                 type=""></ews-specific-data>
+          </form>-->
+      </div>
+      <div class="row">
+        <div class="block-header">
+          <h3>FČS historie pravidelných výstupů</h3>
+        </div>
+        <div class="col-xs-12">
+          <CMT-TABLE header-type="control_detail_fcs_history_header"
+                     hide-filter = "true"
+                     data="vm.data.productItems"
+                     table-empty="Seznam neobsahuje žádnou položku."
+                     pagination-redirect="false"></CMT-TABLE>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="block-header">
+          <h3>Historie</h3>
+        </div>
+        <div class="col-xs-12">
+          <CMT-TABLE data-table-header="vm.historyTableHeader"
+                     hide-filter = "true"
+                     table-class="table-striped"
+                     template="history"
+                     data="vm.data.client.historyItems"
+                     table-empty="Seznam neobsahuje žádnou položku."
+                     pagination-redirect="false"></CMT-TABLE>
+        </div>
+      </div>
+      <div class="row">
+        <div class="block-header">
+          <h3>Předchozí kontroly</h3>
+        </div>
+        <div class="col-xs-12">
+          <CMT-TABLE header-type="control_detail_previous_header"
+                     hide-filter = "true"
+                     data="vm.data.previousControlsItems"
+                     table-empty="Seznam neobsahuje žádnou položku."
+                     pagination-redirect="false"></CMT-TABLE>
+
+        </div>
+      </div>
+    </div>
+  </ng-form>
+
+  <div class="action-bar">
+    <div class="taskActions">
+      <div class="btn-action">
+        <button class="btn btn-default">Úspěšná</button>
+      </div>
+    </div>
+  </div>
+</div>

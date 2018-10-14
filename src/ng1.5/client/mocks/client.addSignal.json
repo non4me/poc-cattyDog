@@ -1,0 +1,931 @@
+{
+  "businessErrors" : null,
+  "client" : {
+    "businessErrors" : null,
+    "clientInfo" : {
+      "warnings" : { },
+      "translatedWarnings" : [ ],
+      "duplicate" : false,
+      "fop" : false,
+      "cluid" : "9009-05-05-02.52.40.630906",
+      "name" : "FOUS truhlářství, s.r.o.",
+      "riskClassificationConfirmed" : {
+        "code" : "EW3",
+        "displayValue" : "EW3",
+        "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "riskClassificationDraft" : {
+        "code" : "EW1",
+        "displayValue" : "EW1",
+        "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+        "validForClient" : true,
+        "validForSignal" : true,
+        "name" : "CB_RiskClassification"
+      },
+      "organization" : {
+        "sectorNACE" : {
+          "code" : "162300",
+          "displayValue" : "Výroba ostatních výrobků stavebního truhlářství a tesařství",
+          "name" : "CB_IndustryCategory"
+        },
+        "d4Sector" : {
+          "code" : "CONSTRUCTION_AND_BUILDING_MAT",
+          "displayValue" : "Stavebnictví a stavební mat.",
+          "name" : "CB_D4Sector"
+        },
+        "registrationNumber" : "28899032",
+        "taxNumber" : "CZ28899032",
+        "registrationAuthority" : "Městský soud v Praze",
+        "countryOfRegistration" : "CZ",
+        "typeOfRegister" : "1"
+      }
+    },
+    "clientDetail" : {
+      "signalClassificationDate" : "2016-04-08T13:02:35Z",
+      "watchlistEntryDate" : "2016-04-08T07:11:21Z",
+      "actionPlan" : {
+        "actionPlanFulfilDate" : "2016-05-09T22:00:00Z",
+        "actionPlanResolverRole" : {
+          "code" : "CMT_EWS_OperatorRisk",
+          "displayValue" : "RISK",
+          "forEvaluation" : true,
+          "name" : "CB_EwsProcessRole"
+        },
+        "actionPlan" : "AP. Bla bla bla.\n\nSešmudláme tady njaký AP."
+      }
+    },
+    "clientOpenedSignals" : {
+      "businessErrors" : null,
+      "headers" : null,
+      "items" : [ {
+        "businessErrors" : null,
+        "signalId" : "EWS1001181",
+        "riskClassification" : {
+          "code" : "EW3",
+          "displayValue" : "EW3",
+          "tooltip" : "Zachycené signály jsou kritické s materiálním dopadem do úvěrového rizika. Vyžaduje okamžitou reakci k ošetření věřitelské pozice. Zapojení WO je nezbytné, ale nemusí vždy znamenat bezprostřední či následný převod klienta do jeho správy.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T013",
+          "displayValue" : "Interní varování (EMUS)",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T013S01",
+          "displayValue" : "Interní varování (EMUS)",
+          "signalTypeCode" : "T013",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CLASSIFIED",
+          "displayValue" : "Klasifikovaný",
+          "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-04-08T12:29:41Z",
+        "actionPlanChangeDate" : "2016-04-08T13:03:36Z",
+        "actionPlanSignal" : true,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001170",
+        "riskClassification" : {
+          "code" : "EW2",
+          "displayValue" : "EW2",
+          "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T014",
+          "displayValue" : "Plnění podmínek BB",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T014S01",
+          "displayValue" : "Plnění podmínek BB",
+          "signalTypeCode" : "T014",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CLASSIFIED",
+          "displayValue" : "Klasifikovaný",
+          "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-04-08T07:10:01Z",
+        "actionPlanChangeDate" : "2016-04-08T07:11:21Z",
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001171",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T014",
+          "displayValue" : "Plnění podmínek BB",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T014S01",
+          "displayValue" : "Plnění podmínek BB",
+          "signalTypeCode" : "T014",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CLASSIFIED",
+          "displayValue" : "Klasifikovaný",
+          "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-04-08T07:10:03Z",
+        "actionPlanChangeDate" : "2016-04-08T07:12:21Z",
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001172",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T014",
+          "displayValue" : "Plnění podmínek BB",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T014S01",
+          "displayValue" : "Plnění podmínek BB",
+          "signalTypeCode" : "T014",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "VALIDATED",
+          "displayValue" : "Validovaný",
+          "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-04-08T10:00:28Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001180",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T008",
+          "displayValue" : "Negativní informace",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T008S01",
+          "displayValue" : "Negativní informace",
+          "signalTypeCode" : "T008",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CLASSIFIED",
+          "displayValue" : "Klasifikovaný",
+          "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-04-08T12:23:29Z",
+        "actionPlanChangeDate" : "2016-04-11T06:57:24Z",
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001867",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T003",
+          "displayValue" : "Polhůtní závazky u jiné banky",
+          "entity" : "PastDueFactsExternal",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T003S01",
+          "displayValue" : "Polhůtní závazky u jiné banky, DPD>10",
+          "signalTypeCode" : "T003",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T12:35:50Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001843",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T002",
+          "displayValue" : "Polhůtní pohledávky",
+          "entity" : "PastDueFacts",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T002S01",
+          "displayValue" : "Polhůtní pohledávky do 30 dnů",
+          "signalTypeCode" : "T002",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T10:29:23Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001844",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T003",
+          "displayValue" : "Polhůtní závazky u jiné banky",
+          "entity" : "PastDueFactsExternal",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T003S01",
+          "displayValue" : "Polhůtní závazky u jiné banky, DPD>10",
+          "signalTypeCode" : "T003",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T10:30:36Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001845",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T004",
+          "displayValue" : "Pokles kreditních obratů na účtech klienta",
+          "entity" : "TurnoverFacts",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T004S01",
+          "displayValue" : "Pokles kreditních obratů na účtech klienta <40%",
+          "signalTypeCode" : "T004",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T10:31:05Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001846",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T004",
+          "displayValue" : "Pokles kreditních obratů na účtech klienta",
+          "entity" : "TurnoverFacts",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T004S01",
+          "displayValue" : "Pokles kreditních obratů na účtech klienta <40%",
+          "signalTypeCode" : "T004",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T10:32:10Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001847",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T005",
+          "displayValue" : "Exekuce nebo blokace na účtech",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T005S01",
+          "displayValue" : "Exekuce na účtech",
+          "signalTypeCode" : "T005",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T10:32:49Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001848",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T010",
+          "displayValue" : "Využívání KTK",
+          "entity" : "OverdraftFacts",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T010S01",
+          "displayValue" : "Využívání KTK",
+          "signalTypeCode" : "T010",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T10:33:34Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001850",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T008",
+          "displayValue" : "Negativní informace",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T008S01",
+          "displayValue" : "Negativní informace",
+          "signalTypeCode" : "T008",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T10:39:29Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001857",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T005",
+          "displayValue" : "Exekuce nebo blokace na účtech",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T005S01",
+          "displayValue" : "Exekuce na účtech",
+          "signalTypeCode" : "T005",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "VALIDATED",
+          "displayValue" : "Validovaný",
+          "description" : "Signál je validovaný RM/EWS a pokračuje dále na klasifikaci.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T10:55:08Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001810",
+        "riskClassification" : {
+          "code" : "EW2",
+          "displayValue" : "EW2",
+          "tooltip" : "Zachycené signály znamenají závažná zjištění s podstatným dopadem do úvěrového rizika. Nehrozí okamžitý default, ale je třeba přijmout co nejdříve  opatření ke zmírnění rizika.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T008",
+          "displayValue" : "Negativní informace",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T008S01",
+          "displayValue" : "Negativní informace",
+          "signalTypeCode" : "T008",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CLASSIFIED",
+          "displayValue" : "Klasifikovaný",
+          "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T06:50:54Z",
+        "actionPlanChangeDate" : "2016-05-09T07:05:56Z",
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001811",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T014",
+          "displayValue" : "Plnění podmínek BB",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T014S01",
+          "displayValue" : "Plnění podmínek BB",
+          "signalTypeCode" : "T014",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CLASSIFIED",
+          "displayValue" : "Klasifikovaný",
+          "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T07:17:36Z",
+        "actionPlanChangeDate" : "2016-05-09T07:28:20Z",
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001812",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T002",
+          "displayValue" : "Polhůtní pohledávky",
+          "entity" : "PastDueFacts",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T002S01",
+          "displayValue" : "Polhůtní pohledávky do 30 dnů",
+          "signalTypeCode" : "T002",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CLASSIFIED",
+          "displayValue" : "Klasifikovaný",
+          "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T07:33:16Z",
+        "actionPlanChangeDate" : "2016-05-09T07:34:52Z",
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001813",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T003",
+          "displayValue" : "Polhůtní závazky u jiné banky",
+          "entity" : "PastDueFactsExternal",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T003S01",
+          "displayValue" : "Polhůtní závazky u jiné banky, DPD>10",
+          "signalTypeCode" : "T003",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CLASSIFIED",
+          "displayValue" : "Klasifikovaný",
+          "description" : "Signál je klasifikovaný a čeká na vyhodnocení akčního plánu.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T07:33:46Z",
+        "actionPlanChangeDate" : "2016-05-09T07:35:12Z",
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001858",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T002",
+          "displayValue" : "Polhůtní pohledávky",
+          "entity" : "PastDueFacts",
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T002S01",
+          "displayValue" : "Polhůtní pohledávky do 30 dnů",
+          "signalTypeCode" : "T002",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T11:16:03Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      }, {
+        "businessErrors" : null,
+        "signalId" : "EWS1001839",
+        "riskClassification" : {
+          "code" : "EW1",
+          "displayValue" : "EW1",
+          "tooltip" : "Zachycené signály  nejsou natolik závažné, aby měly okamžitý negativní dopad na kreditní riziko. Je však nutné zajistit nápravu.",
+          "validForClient" : true,
+          "validForSignal" : true,
+          "name" : "CB_RiskClassification"
+        },
+        "signalType" : {
+          "code" : "T008",
+          "displayValue" : "Negativní informace",
+          "entity" : null,
+          "name" : "CB_EarlyWarningSignalType"
+        },
+        "signalSubType" : {
+          "code" : "T008S01",
+          "displayValue" : "Negativní informace",
+          "signalTypeCode" : "T008",
+          "availableManualInitialization" : true,
+          "name" : "CB_EarlyWarningSignalSubType"
+        },
+        "signalStatus" : {
+          "code" : "CAPTURED",
+          "displayValue" : "Zachycený",
+          "description" : "Signál je zachycený a předaný na řešení uživateli.",
+          "finalni" : false,
+          "name" : "CB_EarlyWarningSignalStatus"
+        },
+        "signalCreationDate" : "2016-05-09T09:37:33Z",
+        "actionPlanChangeDate" : null,
+        "actionPlanSignal" : false,
+        "duplicated" : null,
+        "_links" : { }
+      } ],
+      "searchCriteria" : null,
+      "activePage" : null,
+      "activeLimit" : null,
+      "totalItems" : null,
+      "activeSort" : null,
+      "activeAsc" : null,
+      "_links" : { }
+    },
+    "essoGroup" : {
+      "name" : "FOUS GROUP",
+      "cluid" : "8008-05-25-11.53.58.365391"
+    },
+    "clientRating" : {
+      "rating" : {
+        "code" : "0",
+        "displayValue" : "0_Žádný interní rating",
+        "organization" : true,
+        "name" : "CB_FscsClientRating"
+      },
+      "ratingDate" : null
+    },
+    "businessTeam" : {
+      "rsm" : {
+        "firstname" : "Petr",
+        "lastname" : "Vorlíček",
+        "username" : "CEN78935",
+        "employeeNumber" : 578935,
+        "rkcUnit" : {
+          "code" : "HR0_50000289",
+          "displayValue" : "CE4233_REG.KORPORÁTNÍ CENTRUM PRAHA - VÝCHOD",
+          "cmtShort" : "4233",
+          "cmtLong" : "RKC Praha východ",
+          "name" : "CB_OrganizationUnit"
+        }
+      },
+      "riskManager" : null,
+      "riskWorkout" : null,
+      "rsmSupport" : [ {
+        "firstname" : "Veronika",
+        "lastname" : "Rendlová",
+        "username" : "CEN32685",
+        "employeeNumber" : 532685,
+        "rkcUnit" : {
+          "code" : "HR0_50000289",
+          "displayValue" : "CE4233_REG.KORPORÁTNÍ CENTRUM PRAHA - VÝCHOD",
+          "cmtShort" : "4233",
+          "cmtLong" : "RKC Praha východ",
+          "name" : "CB_OrganizationUnit"
+        }
+      } ],
+      "rkcOrgUnit" : {
+        "code" : "HR0_50000289",
+        "displayValue" : "RKC Praha východ",
+        "cmtShort" : null,
+        "cmtLong" : null,
+        "name" : "CB_OrganizationUnit"
+      }
+    },
+    "riskProfile" : {
+      "symbolId" : "011880",
+      "nextReviewDate" : null,
+      "limitExpositionCurrentExtraction" : null,
+      "limitExpositionApprovedCzk" : null,
+      "limitExpositionApprovedEur" : null,
+      "status" : {
+        "status" : "PO_FOUND"
+      }
+    },
+    "financialReport" : {
+      "headers" : [ "31.12.2012 Nedodáno", "31.12.2013 Nedodáno", "31.12.2014 Nedodáno", "31.12.2015 Nedodáno" ],
+      "rows" : {
+        "equityRatio" : [ null, null, null, null ],
+        "netProfitOrLoss" : [ null, null, null, null ],
+        "interestCoverageRatio" : [ null, null, null, null ],
+        "totalAssets" : [ null, null, null, null ],
+        "capex" : [ null, null, null, null ],
+        "ebit" : [ null, null, null, null ],
+        "freeCashflow" : [ null, null, null, null ],
+        "totalTurnover" : [ null, null, null, null ],
+        "ebitda" : [ null, null, null, null ],
+        "equity" : [ null, null, null, null ],
+        "daysPayable" : [ null, null, null, null ],
+        "daysReceivable" : [ null, null, null, null ],
+        "netDebt" : [ null, null, null, null ],
+        "netDebtDivisionEbitda" : [ null, null, null, null ],
+        "grossMargin" : [ null, null, null, null ]
+      }
+    },
+    "_links" : { }
+  },
+  "actionPlanResolverUser" : null,
+  "currentPeriod" : null,
+  "lastPeriod" : null,
+  "previousStatusCode" : null,
+  "actionPlan" : null,
+  "classification" : null,
+  "allowedRiskClassifications" : null,
+  "signalDetection" : null,
+  "taskBar" : null,
+  "signalAssesmentDate" : null,
+  "signalClosingDate" : null,
+  "signalCreationDate" : null,
+  "signalCreatedBy" : null,
+  "signalDescription" : null,
+  "signalStatus" : null,
+  "signalSubType" : null,
+  "signalType" : null,
+  "signalValidationDate" : null,
+  "signalId" : null,
+  "actionPlanSignal" : null,
+  "signalProperties" : null,
+  "specificData" : null,
+  "historyItems" : null,
+  "_links" : {
+    "clientDetail" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/9009-05-05-02.52.40.630906",
+      "allow" : "GET"
+    },
+    "deeplinkCognosOverview" : {
+      "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2704%20Overwiew%20klienta%27%5d&ui.name=04%20Overwiew%20klienta&run.outputFormat=spreadsheetML&p_p_CLUID=9009-05-05-02.52.40.630906&run.prompt=false",
+      "title" : "Overview"
+    },
+    "deeplinkCognosWatchlist" : {
+      "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2702%20Watch%20list%20note%27%5d&ui.name=02%20Watch%20list%20note&run.outputFormat=spreadsheetML&p_p_CLUID=9009-05-05-02.52.40.630906&run.prompt=false",
+      "title" : "Watchlist"
+    },
+    "deeplinkColman" : {
+      "href" : "http://colman-int.csint.cz/colman-online-web/displayPartner?partnerCluid=9009-05-05-02.52.40.630906",
+      "title" : "COLMAN"
+    },
+    "deeplinkDmx" : {
+      "href" : "http://taskspace.csint.cz/taskspace/cluid?cluid=9009-05-05-02.52.40.630906&loginname=ext95436",
+      "title" : "DMX"
+    },
+    "signalCreateMandatoryValues" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/9009-05-05-02.52.40.630906/signals/mandatory",
+      "allow" : "GET"
+    },
+    "signalCreateManual" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/9009-05-05-02.52.40.630906/signals/+",
+      "allow" : "POST"
+    },
+    "signalCreateManualRefresh" : {
+      "href" : "http://localhost:8888/cmt-fe/api/clients/9009-05-05-02.52.40.630906/signals/+?refresh=true",
+      "allow" : "GET"
+    }
+  }
+}

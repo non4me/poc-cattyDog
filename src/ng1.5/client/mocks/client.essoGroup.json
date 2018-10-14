@@ -1,0 +1,281 @@
+{
+  "businessErrors" : null,
+  "name" : "AGRO, spol. s.r.o.",
+  "cluid" : "8015-02-03-08.09.59.161755",
+  "gestor" : {
+    "username" : "PA021273",
+    "firstname" : "Ludmila",
+    "surname" : "Kubelková"
+  },
+  "businessTeam" : {
+    "rsm" : null,
+    "riskManager" : null,
+    "riskWorkout" : null,
+    "rsmSupport" : null,
+    "rkcOrgUnit" : {
+      "code" : "HR0_50004037",
+      "displayValue" : "CE8320_ZPRACOVÁNÍ MSE",
+      "cmtShort" : null,
+      "cmtLong" : null,
+      "name" : "CB_OrganizationUnit"
+    }
+  },
+  "clientRating" : {
+    "rating" : {
+      "code" : "0",
+      "displayValue" : "0_Žádný interní rating",
+      "organization" : true,
+      "name" : "CB_FscsClientRating"
+    },
+    "ratingDate" : null
+  },
+  "financialProfile" : {
+    "symbolId" : null,
+    "nextReviewDate" : null,
+    "limitExpositionCurrentExtraction" : null,
+    "limitExpositionApprovedCzk" : null,
+    "limitExpositionApprovedEur" : null,
+    "status" : {
+      "status" : "PO_FOUND"
+    }
+  },
+  "financialReport" : {
+    "columns" : {
+      "31.12.2012 Nedodáno" : {
+        "totalTurnover" : null,
+        "ebit" : null,
+        "ebitda" : null,
+        "netProfitOrLoss" : null,
+        "totalAssets" : null,
+        "equity" : null,
+        "equityRatio" : null,
+        "netDebt" : null,
+        "netDebtDivisionEbitda" : null,
+        "interestCoverageRatio" : null,
+        "grossMargin" : null,
+        "daysReceivable" : null,
+        "daysPayable" : null,
+        "capex" : null,
+        "freeCashflow" : null,
+        "balanceSheetTypeCode" : null,
+        "balanceSheetId" : null,
+        "balanceSheetDate" : null,
+        "balanceSheetEntryDate" : null
+      },
+      "31.12.2013 Nedodáno" : {
+        "totalTurnover" : null,
+        "ebit" : null,
+        "ebitda" : null,
+        "netProfitOrLoss" : null,
+        "totalAssets" : null,
+        "equity" : null,
+        "equityRatio" : null,
+        "netDebt" : null,
+        "netDebtDivisionEbitda" : null,
+        "interestCoverageRatio" : null,
+        "grossMargin" : null,
+        "daysReceivable" : null,
+        "daysPayable" : null,
+        "capex" : null,
+        "freeCashflow" : null,
+        "balanceSheetTypeCode" : null,
+        "balanceSheetId" : null,
+        "balanceSheetDate" : null,
+        "balanceSheetEntryDate" : null
+      },
+      "31.12.2014 Nedodáno" : {
+        "totalTurnover" : null,
+        "ebit" : null,
+        "ebitda" : null,
+        "netProfitOrLoss" : null,
+        "totalAssets" : null,
+        "equity" : null,
+        "equityRatio" : null,
+        "netDebt" : null,
+        "netDebtDivisionEbitda" : null,
+        "interestCoverageRatio" : null,
+        "grossMargin" : null,
+        "daysReceivable" : null,
+        "daysPayable" : null,
+        "capex" : null,
+        "freeCashflow" : null,
+        "balanceSheetTypeCode" : null,
+        "balanceSheetId" : null,
+        "balanceSheetDate" : null,
+        "balanceSheetEntryDate" : null
+      },
+      "31.12.2015 Nedodáno" : {
+        "totalTurnover" : null,
+        "ebit" : null,
+        "ebitda" : null,
+        "netProfitOrLoss" : null,
+        "totalAssets" : null,
+        "equity" : null,
+        "equityRatio" : null,
+        "netDebt" : null,
+        "netDebtDivisionEbitda" : null,
+        "interestCoverageRatio" : null,
+        "grossMargin" : null,
+        "daysReceivable" : null,
+        "daysPayable" : null,
+        "capex" : null,
+        "freeCashflow" : null,
+        "balanceSheetTypeCode" : null,
+        "balanceSheetId" : null,
+        "balanceSheetDate" : null,
+        "balanceSheetEntryDate" : null
+      }
+    }
+  },
+  "members" : {
+    "businessErrors" : null,
+    "headers" : null,
+    "items" : [ {
+      "businessErrors" : null,
+      "businessErrors" : null,
+      "cluid" : "9006-12-06-11.55.47.919114",
+      "registrationNumber" : "25252658",
+      "firstname" : null,
+      "surname" : null,
+      "name" : "Agro Brteč, spol. s r.o.",
+      "person" : false,
+      "riskClassification" : null,
+      "_links" : { },
+      "_links" : {
+        "clientDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/clients/9006-12-06-11.55.47.919114",
+          "allow" : "GET"
+        },
+        "deeplinkCognosOverview" : {
+          "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2704%20Overwiew%20klienta%27%5d&ui.name=04%20Overwiew%20klienta&run.outputFormat=spreadsheetML&p_p_CLUID=9006-12-06-11.55.47.919114&run.prompt=false",
+          "title" : "Overview"
+        },
+        "deeplinkCognosWatchlist" : {
+          "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2702%20Watch%20list%20note%27%5d&ui.name=02%20Watch%20list%20note&run.outputFormat=spreadsheetML&p_p_CLUID=9006-12-06-11.55.47.919114&run.prompt=false",
+          "title" : "Watchlist"
+        },
+        "deeplinkColman" : {
+          "href" : "http://colman-int.csint.cz/colman-online-web/displayPartner?partnerCluid=9006-12-06-11.55.47.919114",
+          "title" : "COLMAN"
+        },
+        "deeplinkDmx" : {
+          "href" : "http://taskspace.csint.cz/taskspace/cluid?cluid=9006-12-06-11.55.47.919114&loginname=ext96518",
+          "title" : "DMX"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "businessErrors" : null,
+      "cluid" : "8015-02-03-09.51.27.746343",
+      "registrationNumber" : "44407629",
+      "firstname" : null,
+      "surname" : null,
+      "name" : "Jan Svoboda",
+      "person" : false,
+      "riskClassification" : null,
+      "_links" : { },
+      "_links" : {
+        "clientDetail" : {
+          "href" : "http://localhost:8888/cmt-fe/api/clients/8015-02-03-09.51.27.746343",
+          "allow" : "GET"
+        },
+        "deeplinkCognosOverview" : {
+          "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2704%20Overwiew%20klienta%27%5d&ui.name=04%20Overwiew%20klienta&run.outputFormat=spreadsheetML&p_p_CLUID=8015-02-03-09.51.27.746343&run.prompt=false",
+          "title" : "Overview"
+        },
+        "deeplinkCognosWatchlist" : {
+          "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2702%20Watch%20list%20note%27%5d&ui.name=02%20Watch%20list%20note&run.outputFormat=spreadsheetML&p_p_CLUID=8015-02-03-09.51.27.746343&run.prompt=false",
+          "title" : "Watchlist"
+        },
+        "deeplinkColman" : {
+          "href" : "http://colman-int.csint.cz/colman-online-web/displayPartner?partnerCluid=8015-02-03-09.51.27.746343",
+          "title" : "COLMAN"
+        },
+        "deeplinkDmx" : {
+          "href" : "http://taskspace.csint.cz/taskspace/cluid?cluid=8015-02-03-09.51.27.746343&loginname=ext96518",
+          "title" : "DMX"
+        }
+      }
+    }, {
+      "businessErrors" : null,
+      "businessErrors" : null,
+      "cluid" : "1997-04-09-17.07.20.435431",
+      "registrationNumber" : "5805101522",
+      "firstname" : "Jan",
+      "surname" : "Svoboda",
+      "name" : "Jan Svoboda",
+      "person" : true,
+      "riskClassification" : null,
+      "_links" : { },
+      "_links" : {
+        "deeplinkCognosOverview" : {
+          "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2704%20Overwiew%20klienta%27%5d&ui.name=04%20Overwiew%20klienta&run.outputFormat=spreadsheetML&p_p_CLUID=1997-04-09-17.07.20.435431&run.prompt=false",
+          "title" : "Overview"
+        },
+        "deeplinkCognosWatchlist" : {
+          "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2702%20Watch%20list%20note%27%5d&ui.name=02%20Watch%20list%20note&run.outputFormat=spreadsheetML&p_p_CLUID=1997-04-09-17.07.20.435431&run.prompt=false",
+          "title" : "Watchlist"
+        },
+        "deeplinkColman" : {
+          "href" : "http://colman-int.csint.cz/colman-online-web/displayPartner?partnerCluid=1997-04-09-17.07.20.435431",
+          "title" : "COLMAN"
+        },
+        "deeplinkDmx" : {
+          "href" : "http://taskspace.csint.cz/taskspace/cluid?cluid=1997-04-09-17.07.20.435431&loginname=ext96518",
+          "title" : "DMX"
+        }
+      }
+    } ],
+    "searchCriteria" : null,
+    "activePage" : "1",
+    "activeLimit" : "10",
+    "totalItems" : null,
+    "activeSort" : null,
+    "activeAsc" : null,
+    "_links" : {
+      "limit010" : {
+        "href" : "http://localhost:8888/cmt-fe/api/essogroups/8015-02-03-08.09.59.161755/clients?pageSize=10",
+        "allow" : "GET",
+        "title" : "10"
+      },
+      "limit020" : {
+        "href" : "http://localhost:8888/cmt-fe/api/essogroups/8015-02-03-08.09.59.161755/clients?pageSize=20",
+        "allow" : "GET",
+        "title" : "20"
+      },
+      "limit050" : {
+        "href" : "http://localhost:8888/cmt-fe/api/essogroups/8015-02-03-08.09.59.161755/clients?pageSize=50",
+        "allow" : "GET",
+        "title" : "50"
+      },
+      "limit100" : {
+        "href" : "http://localhost:8888/cmt-fe/api/essogroups/8015-02-03-08.09.59.161755/clients?pageSize=100",
+        "allow" : "GET",
+        "title" : "100"
+      },
+      "page001" : {
+        "href" : "http://localhost:8888/cmt-fe/api/essogroups/8015-02-03-08.09.59.161755/clients?pageNumber=1&pageSize=10",
+        "allow" : "GET",
+        "title" : "1"
+      }
+    }
+  },
+  "_links" : {
+    "deeplinkCognosOverview" : {
+      "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2704%20Overwiew%20klienta%27%5d&ui.name=04%20Overwiew%20klienta&run.outputFormat=spreadsheetML&p_p_CLUID=8015-02-03-08.09.59.161755&run.prompt=false",
+      "title" : "Overview"
+    },
+    "deeplinkCognosWatchlist" : {
+      "href" : "http://aspscwd1.cen.csint.cz/cognos/cgi-bin/cognosisapi.dll?b_action=cognosViewer&ui.action=run&ui.object=%2fcontent%2fpackage%5b%40name%3d%27CMT%2fEWS%27%5d%2freport%5b%40name%3d%2702%20Watch%20list%20note%27%5d&ui.name=02%20Watch%20list%20note&run.outputFormat=spreadsheetML&p_p_CLUID=8015-02-03-08.09.59.161755&run.prompt=false",
+      "title" : "Watchlist"
+    },
+    "deeplinkColman" : {
+      "href" : "http://colman-int.csint.cz/colman-online-web/displayPartner?partnerCluid=8015-02-03-08.09.59.161755",
+      "title" : "COLMAN"
+    },
+    "deeplinkDmx" : {
+      "href" : "http://taskspace.csint.cz/taskspace/cluid?cluid=8015-02-03-08.09.59.161755&loginname=ext96518",
+      "title" : "DMX"
+    }
+  }
+}

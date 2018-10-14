@@ -1,0 +1,12 @@
+.git
+.idea
+node_modules
+build
+release
+src
+target
+*.log
+.DS_Store
+.tmp
+tmp
+.settings

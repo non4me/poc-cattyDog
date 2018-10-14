@@ -1,0 +1,403 @@
+<div class="container" role="main">
+  <alerts severity="E"></alerts>
+
+  <div class="page-header">
+    <h1>Vyhledávání kontrol</h1>
+  </div>
+  <form name="signalSearchForm" class="form-search" ng-submit="vm.searchSignals()">
+    <div id="signal-parameters" class="row grey-bg search-form">
+      <div class="form-group col-xs-3"
+           tooltip-error="searchCriteria.signal.signalId"
+           tooltip-error-data="{maxlength: vm.signalIdMaxLength}">
+        <label for="signalId">
+          ID signálu
+<span class="icon-info tooltip-info" tooltip placement="top"
+      data-title="Vyplňte celé tuzemské či zahraniční identifikační číslo hledané právnické osoby. Vyhledávání dle části IČ není podporováno."></span>
+        </label>
+        <input type="text" class="form-control"
+               id="signalId"
+               name="searchCriteria.signal.signalId"
+               maxlength="{{::vm.signalIdMaxLength+1}}"
+               ng-maxlength="{{::vm.signalIdMaxLength}}"
+               ng-model="vm.searchCriteria.signal.signalId">
+      </div>
+      <div class="form-group col-xs-3">
+        <label for="signalType">Název</label>
+        <select ng-model="vm.searchCriteria.signal.signalType"
+                class="form-control" id="signalType">
+          <option value="">Vše</option>
+          <option ng-repeat="signalType in vm.signalTypes" ng-attr-value="{{signalType.code}}">
+            {{signalType.displayValue}}
+          </option>
+        </select>
+      </div>
+      <div class="form-group col-xs-3">
+        <label for="signalStatus">Stav signálu</label>
+        <select ng-model="vm.searchCriteria.signal.signalStatus"
+                class="form-control" id="signalStatus">
+          <option value="">Vše</option>
+          <option ng-repeat="signalStatus in vm.signalStatuses | filter:displaySignalType"
+                  ng-attr-value="{{signalStatus.code}}">
+            {{signalStatus.displayValue}}
+          </option>
+        </select>
+      </div>
+      <div class="form-group col-xs-3"
+           tooltip-error="searchCriteria.signal.signalDescription"
+           tooltip-error-data="{maxlength: vm.signalDescriptionMaxLength}">
+        <label for="signalDescription">
+          Popis
+<span class="icon-info tooltip-info" tooltip placement="top"
+      data-title="Vyplňte alespoň první tři znaky názvu nebo IČ klienta.
+    Vyhledávání není citlivé na velikost písmen.">
+</span>
+        </label>
+        <input type="text"
+               ng-model="vm.searchCriteria.signal.signalDescription"
+               class="form-control"
+               id="signalDescription"
+               name="searchCriteria.signal.signalDescription"
+               ng-maxlength="{{::vm.signalDescriptionMaxLength}}"
+               maxlength="{{::vm.signalDescriptionMaxLength+1}}">
+      </div>
+      <!-- EWS -->
+      <div id="signal-riskClassifications" class="clearfix">
+        <div class="col-xs-3">
+          <label>
+            Pouze signály s klasifikací
+          </label>
+        </div>
+        <div class="col-xs-9">
+          <label class="checkbox-inline" ng-repeat="riskClassification in vm.riskClassifications"
+                 tooltip-error="{{riskClassification.code}}">
+            <input type="checkbox"
+                   ng-attr-id="{{riskClassification.code}}"
+                   name="{{riskClassification.code}}"
+                   ng-model="vm.selectedClassifications[riskClassification.code]"
+                   ng-change="vm.clickOne(riskClassification.code)">
+            {{riskClassification.displayValue}}
+          </label>
+          <label class="checkbox-inline">
+            <a id="all" value="" ng-model="vm.checkAll" ng-click="vm.clickAll()" class="inline-block pointer">
+              Označit vše</a>
+          </label>
+        </div>
+      </div>
+      <!-- advanced search -->
+      <div id="filter-additional-options-wrapper" class="col-xs-12">
+
+        <div role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default ">
+            <div bs-collapse-toggle class="panel-heading pointer" role="tab"
+                 id="filter-additional-options-header" ng-click="vm.collaps = !vm.collaps">
+              <h4 class="panel-title pointer">
+                Rozšířené filtrování signálů
+              </h4>
+            </div>
+            <div id="filter-additional-options" class="panel-collapse"
+                 role="tabpanel" ng-show="vm.collaps">
+              <div class="panel-body">
+                <div class="col-xs-6">
+                  <table id="search-criteria-extended-left"
+                         class="table table-transparent table-sm table-no-header">
+                    <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td colspan="3">
+                        Datum založení od - do
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td tooltip-error="searchCriteria.signal.signalCreateDateFrom">
+                        <ews-form-control mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.signalCreateDateFrom"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-lower-than="vm.searchCriteria.signal.signalCreateDateTo"
+                                          name="searchCriteria.signal.signalCreateDateFrom">
+                        </ews-form-control>
+                      </td>
+                      <td class="text-center">-</td>
+                      <td tooltip-error="searchCriteria.signal.signalCreateDateTo">
+                        <ews-form-control mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.signalCreateDateTo"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-greater-than="vm.searchCriteria.signal.signalCreateDateFrom"
+                                          name="searchCriteria.signal.signalCreateDateTo">
+                        </ews-form-control>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="3"> Datum validace od - do</td>
+                    </tr>
+                    <tr>
+                      <td tooltip-error="searchCriteria.signal.signalValidationDateFrom">
+                        <ews-form-control mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.signalValidationDateFrom"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-lower-than="vm.searchCriteria.signal.signalValidationDateTo"
+                                          name="searchCriteria.signal.signalValidationDateFrom">
+
+                        </ews-form-control>
+
+                      </td>
+                      <td class="text-center">-</td>
+                      <td tooltip-error="searchCriteria.signal.signalValidationDateTo">
+                        <ews-form-control mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.signalValidationDateTo"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-greater-than="vm.searchCriteria.signal.signalValidationDateFrom"
+                                          name="searchCriteria.signal.signalValidationDateTo">
+
+                        </ews-form-control>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">Datum klasifikace od - do</td>
+                    </tr>
+                    <tr>
+                      <td tooltip-error="searchCriteria.signal.signalClassificationDateFrom">
+                        <ews-form-control mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.signalClassificationDateFrom"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-lower-than="vm.searchCriteria.signal.signalClassificationDateTo"
+                                          name="searchCriteria.signal.signalClassificationDateFrom">
+
+                        </ews-form-control>
+
+                      </td>
+                      <td class="text-center">-</td>
+                      <td tooltip-error="searchCriteria.signal.signalClassificationDateTo">
+                        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.signalClassificationDateTo"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-greater-than="vm.searchCriteria.signal.signalClassificationDateFrom"
+                                          name="searchCriteria.signal.signalClassificationDateTo">
+
+                        </EWS-FORM-CONTROL>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        CLUID klienta
+                      </td>
+                      <td>
+                        <input ng-model="vm.searchWithCluid.cluid" type="text"
+                               ng-model-options="{allowInvalid:true}"
+                               name="searchWithCluid.cluid"
+                               class="form-control"
+                               ng-change="vm.searchCluidChange()"
+                               ng-disabled="vm.isSet(['searchCriteria.client.name','searchCriteria.client.registrationNumber'])"
+                               id="filter-client-CLUID">
+                      </td>
+                    </tr>
+                    </tbody>
+
+                  </table>
+
+                </div>
+                <div class="col-xs-6">
+                  <table id="search-criteria-extended-right"
+                         class="table table-transparent table-sm table-no-header">
+                    <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td colspan="3">Datum poslední změny akčního plánu od - do</td>
+                    </tr>
+
+                    <tr>
+                      <td tooltip-error="searchCriteria.signal.actionPlanChangeDateFrom">
+                        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.actionPlanChangeDateFrom"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-lower-than="vm.searchCriteria.signal.actionPlanChangeDateTo"
+                                          name="searchCriteria.signal.actionPlanChangeDateFrom">
+
+                        </EWS-FORM-CONTROL>
+
+                      </td>
+                      <td class="text-center">-</td>
+                      <td tooltip-error="searchCriteria.signal.actionPlanChangeDateTo">
+                        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.actionPlanChangeDateTo"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-greater-than="vm.searchCriteria.signal.actionPlanChangeDateFrom"
+                                          name="searchCriteria.signal.actionPlanChangeDateTo">
+                        </EWS-FORM-CONTROL>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">Datum kontroly akčního plánu od - do</td>
+                    </tr>
+
+                    <tr>
+                      <td tooltip-error="searchCriteria.signal.actionPlanDueDateFrom">
+                        <ews-form-control mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.actionPlanDueDateFrom"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          date-lower-than="vm.searchCriteria.signal.actionPlanDueDateTo"
+                                          name="searchCriteria.signal.actionPlanDueDateFrom">
+
+                        </ews-form-control>
+
+                      </td>
+                      <td class="text-center">-</td>
+                      <td tooltip-error="searchCriteria.signal.actionPlanDueDateTo">
+                        <ews-form-control mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.actionPlanDueDateTo"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          date-greater-than="vm.searchCriteria.signal.actionPlanDueDateFrom"
+                                          name="searchCriteria.signal.actionPlanDueDateTo">
+                        </ews-form-control>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">Datum ukončení od - do</td>
+                    </tr>
+
+                    <tr>
+                      <td tooltip-error="searchCriteria.signal.signalClosingDateFrom">
+                        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.signalClosingDateFrom"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-lower-than="vm.searchCriteria.signal.signalClosingDateTo"
+                                          name="searchCriteria.signal.signalClosingDateFrom">
+
+                        </EWS-FORM-CONTROL>
+
+                      </td>
+                      <td class="text-center">-</td>
+                      <td tooltip-error="searchCriteria.signal.signalClosingDateTo">
+                        <EWS-FORM-CONTROL mode="vm.formControlMode"
+                                          ng-model="vm.searchCriteria.signal.signalClosingDateTo"
+                                          type="datepicker"
+                                          ng-model-options="{allowInvalid:true}"
+                                          max-date="vm.currentDate"
+                                          date-greater-than="vm.searchCriteria.signal.signalClosingDateFrom"
+                                          name="searchCriteria.signal.signalClosingDateTo">
+                        </EWS-FORM-CONTROL>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="clearfix "></div>
+                <ng-form name="clientSearchForm" isolate-form>
+                  <div ng-if="vm.isAllowed('clientSearch')">
+                    <hr class="strong"/>
+                    <div class="form-group col-xs-3" tooltip-error="searchCriteria.client.name">
+                      <label for="filter-client-name">Název klienta</label>
+                      <input ng-model="vm.searchCriteria.client.name"
+                             type="text"
+                             class="form-control"
+                             ng-model-options="{allowInvalid:true}"
+                             name="searchCriteria.client.name"
+                             id="filter-client-name"
+                             ng-minlength="3"
+                             ng-disabled="vm.isSet(['searchCriteria.client.registrationNumber','searchWithCluid.cluid'])">
+                    </div>
+                    <div class="form-group cols-xs-offset-1 col-xs-3">
+                      <label for="filter-client-IC">IČ klienta</label>
+                      <input ng-model="vm.searchCriteria.client.registrationNumber"
+                             type="text"
+                             ng-model-options="{allowInvalid:true}"
+                             name="searchCriteria.client.registrationNumber"
+                             class="form-control"
+                             id="filter-client-IC"
+                             ng-disabled="vm.isSet(['searchCriteria.client.name','searchWithCluid.cluid'])">
+                    </div>
+                    <div class="form-group  col-xs-2">
+                      <br/>
+                      <button class="btn btn-wide" ng-click="vm.clientsSearch($event)"
+                              ng-disabled="!vm.isSet(['searchCriteria.client.name','searchCriteria.client.registrationNumber'])">
+                        Hledat v CRM
+                      </button>
+                    </div>
+                  </div>
+                </ng-form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <alerts severity="W" no-sticky></alerts>
+      </div>
+      <div class="col-xs-12">
+        <cmt-table ng-if="vm.searchCriteria.client.data.items != null && !vm.loading"
+                   table-class="table-bordered"
+                   header-type="client_filter_table_header"
+                   hide-pagination="true"
+                   data="vm.searchCriteria.client.data"
+                   table-empty="Dle zadaných kriterií vyhledávání se nepodařilo nalézt žádný záznam.">
+        </cmt-table>
+      </div>
+    </div>
+
+    <!-- buttons -->
+    <div class="row buttons">
+      <div class="col-xs-12">
+        <input type="submit" class="btn btn-wide" value="Hledat"
+               ng-disabled="!vm.data._links.signalSearch.href || signalSearchForm.$invalid">
+        <a href="" ng-click="vm.resetFilter()" class="reset-link">Vynulovat nastavení</a>
+      </div>
+    </div>
+  </form>
+
+  <!-- results -->
+  <div class="row">
+    <div id="search-result" class="search-results">
+      <cmt-table ng-if="vm.data.items != null && !vm.loading"
+                 table-class="table-bordered"
+                 header-type="signal_table_header"
+                 data="vm.data"
+                 table-empty="Dle zadaných kriterií vyhledávání se nepodařilo nalézt žádný záznam."
+                 pagination-redirect="true">
+      </cmt-table>
+
+    </div>
+    <div class="col-xs-12">
+      <div ng-if="vm.data.items.length > 0 && !vm.loading && vm.data._links.signalExport.href">
+        <button-export src="data._links.signalExport.href"></button-export>
+      </div>
+    </div>
+  </div>
+</div>
