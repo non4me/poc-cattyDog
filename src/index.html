@@ -2,22 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Migrated</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="ng1.5/build/styles.css" rel="stylesheet"></head>
+  <title>Notes</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="ng1/bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css({.tmp,app}) styles/main.css -->
+  <!-- injector:css -->
+  <link rel="stylesheet" href="ng1/app/scripts/directives/_loader/loader.css">
+  <link rel="stylesheet" href="ng1/app/scripts/directives/note-list/notes.css">
+  <link rel="stylesheet" href="ng1/app/styles/contact.css">
+  <link rel="stylesheet" href="ng1/app/styles/main.css">
+  <!-- endinjector -->
+  <!-- endbuild -->
 </head>
-<body>
-<div class="app">
-  <dataview ui-view></dataview>
+<body ng-app="demoApp">
+<loader></loader>
+<navigation></navigation>
+
+<div class="container">
+  <div ng-view=""></div>
 </div>
 
+<div class="footer">
+  <div class="container">
+    <p>Vladimir Troyanenko</p>
+  </div>
+</div>
 
 <app-root></app-root>
-<script src="ng1.5/build/vendor.bundle.js">
 
-</script><script src="ng1.5/build/app.bundle.js"></script>
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.0.0/webcomponents-loader.js"></script>
+<script src="https://github.com/webcomponents/webcomponents-lite/blob/master/webcomponents-lite.js"></script>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="ng1/bower_components/jquery/dist/jquery.js"></script>
+<script src="ng1/bower_components/angular/angular.js"></script>
+<script src="ng1/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="ng1/bower_components/angular-animate/angular-animate.js"></script>
+<script src="ng1/bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="ng1/bower_components/angular-resource/angular-resource.js"></script>
+<script src="ng1/bower_components/angular-route/angular-route.js"></script>
+<script src="ng1/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="ng1/bower_components/angular-touch/angular-touch.js"></script>
+<script src="ng1/bower_components/angular-translate/angular-translate.js"></script>
+<script
+  src="ng1/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- injector:js -->
+<script src="ng1/app/scripts/app.js"></script>
+<script src="ng1/app/scripts/controllers/contact.js"></script>
+<script src="ng1/app/scripts/controllers/main.js"></script>
+<script src="ng1/app/scripts/directives/_loader/loader.js"></script>
+<script src="ng1/app/scripts/directives/click-out.js"></script>
+<script src="ng1/app/scripts/directives/lang-switcher/lang-switcher.js"></script>
+<script src="ng1/app/scripts/directives/navigation/navigation.js"></script>
+<script src="ng1/app/scripts/directives/note-list/note-element/note-element.js"></script>
+<script src="ng1/app/scripts/directives/note-list/note-list.js"></script>
+<script src="ng1/app/scripts/services/notes-api.js"></script>
+<script src="ng1/app/scripts/templates.js"></script>
+<!-- endinjector -->
+<!-- endbuild -->
 </body>
 </html>

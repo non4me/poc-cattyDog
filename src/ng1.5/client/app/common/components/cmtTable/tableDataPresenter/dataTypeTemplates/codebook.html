@@ -1,8 +1,0 @@
-<span tooltip ng-attr-data-title="{{vm.record[vm.column.name].tooltip}}" data-container="body"
-      ng-class="{'tooltip-container': vm.record[vm.column.name].tooltip}">
-
-    <i ng-if="vm.column.icon" ews-icon="vm.record[vm.column.name].code"></i>
-  <span title="{{::vm.getCodebookValue(vm.record, vm.column.name, vm.column.valueFrom)}}">
-    {{::vm.getCodebookValue(vm.record, vm.column.name, vm.column.valueFrom)}}
-  </span>
-</span>

@@ -1,0 +1,21 @@
+<div class="note-list">
+    <div class="btn btn-success add" ng-click="showAddNewNote()" ng-show="!isAddNew">
+        <span class="glyphicon glyphicon-plus-sign" title="{{ 'add' | translate }}"></span>
+        {{ 'add' | translate }}
+    </div>
+    <textarea class="new-note" ng-model="newNote" ng-show="isAddNew"></textarea>
+
+    <div class="btn-group" role="group" ng-show="isAddNew">
+        <button type="button" class="btn btn-warning left" title="{{ 'cancel' | translate }}"
+                ng-click="hideAddNewNote()">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+        <button type="button" class="btn btn-success right" title="{{ 'add' | translate }}" ng-click="addNewNote()">
+            <span class="glyphicon glyphicon-ok"></span>
+        </button>
+    </div>
+
+    <note-element notes="notes" note="note" ng-repeat="note in notes | orderBy:'-id'"></note-element>
+
+    <div class="dblclick"><span class="glyphicon glyphicon-edit"></span> {{ 'dblclick' | translate }}</div>
+</div>
