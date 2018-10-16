@@ -9,7 +9,7 @@
 angular.module('demoApp')
     .directive('loader', function () {
       return {
-        templateUrl: 'scripts/directives/_loader/loader.html',
+        templateUrl: 'ng1/app/scripts/directives/_loader/loader.html',
         restrict: 'E',
         replace: true,
         scope: {},

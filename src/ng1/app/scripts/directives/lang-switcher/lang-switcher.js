@@ -10,7 +10,7 @@
 angular.module('demoApp')
   .directive('langSwitcher', function () {
     return {
-      templateUrl: 'scripts/directives/lang-switcher/lang-switcher.html',
+      templateUrl: 'ng1/app/scripts/directives/lang-switcher/lang-switcher.html',
       restrict: 'E',
       replace: true,
       controller: function($scope, $translate) {

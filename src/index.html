@@ -20,7 +20,7 @@
   <!-- endinjector -->
   <!-- endbuild -->
 </head>
-<body ng-app="demoApp">
+<body>
 <loader></loader>
 <navigation></navigation>
 
@@ -34,10 +34,7 @@
   </div>
 </div>
 
-<app-root></app-root>
-
-<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.0.0/webcomponents-loader.js"></script>
-<script src="https://github.com/webcomponents/webcomponents-lite/blob/master/webcomponents-lite.js"></script>
+<ng2-demo></ng2-demo>
 
 
 <!-- build:js(.) scripts/vendor.js -->
@@ -70,8 +67,10 @@
 <script src="ng1/app/scripts/directives/note-list/note-element/note-element.js"></script>
 <script src="ng1/app/scripts/directives/note-list/note-list.js"></script>
 <script src="ng1/app/scripts/services/notes-api.js"></script>
-<script src="ng1/app/scripts/templates.js"></script>
+<!--<script src="ng1/app/scripts/templates.js"></script>-->
 <!-- endinjector -->
 <!-- endbuild -->
+
+
 </body>
 </html>

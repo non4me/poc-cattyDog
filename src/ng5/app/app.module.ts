@@ -1,9 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { UpgradeModule } from '@angular/upgrade/static';
+import { downgradeComponent, UpgradeModule } from '@angular/upgrade/static';
 import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+
+declare var angular: any;
+
+angular.module('demoApp')
+  .directive(
+    'ng2Demo',
+    downgradeComponent({component: AppComponent})
+  );
 
 
 @NgModule({
@@ -15,11 +23,12 @@ import { AppComponent } from './app.component';
     UpgradeModule
   ],
   providers: [],
+  entryComponents: [AppComponent]
   // bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(private upgrade: UpgradeModule) { }
   ngDoBootstrap() {
-    this.upgrade.bootstrap(document.body, ['phonecatApp'], { strictDi: true });
+    this.upgrade.bootstrap(document.body, ['demoApp']);
   }
 }

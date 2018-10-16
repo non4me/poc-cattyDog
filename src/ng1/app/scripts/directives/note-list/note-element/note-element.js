@@ -10,7 +10,7 @@
 angular.module('demoApp')
   .directive('noteElement', function () {
     return {
-      templateUrl: 'scripts/directives/note-list/note-element/note-element.html',
+      templateUrl: 'ng1/app/scripts/directives/note-list/note-element/note-element.html',
       restrict: 'E',
       replace: true,
       scope: {

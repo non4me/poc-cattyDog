@@ -10,7 +10,7 @@
 angular.module('demoApp')
   .directive('navigation', function () {
     return {
-      templateUrl: 'scripts/directives/navigation/navigation.html',
+      templateUrl: 'ng1/app/scripts/directives/navigation/navigation.html',
       restrict: 'E',
       replace: true,
       controller: function ($scope, $location) {
