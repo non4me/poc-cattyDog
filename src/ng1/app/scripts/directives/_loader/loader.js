@@ -11,9 +11,8 @@ angular.module('demoApp')
       return {
         templateUrl: 'ng1/app/scripts/directives/_loader/loader.html',
         restrict: 'E',
-        replace: true,
         scope: {},
-        controller: function ($scope, $rootScope) {
+        controller: ['$scope', '$rootScope', function ($scope, $rootScope) {
           $scope.isLoading = false;
 
           var loaderStart = $rootScope.$on('startLoading', function () {
@@ -31,6 +30,6 @@ angular.module('demoApp')
                 loaderStop();
               }
           );
-        }
+        }]
       };
     });

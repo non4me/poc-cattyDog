@@ -12,7 +12,7 @@ angular
   .module('demoApp', [
     'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'pascalprecht.translate'
   ])
-  .config(function ($routeProvider) {
+  .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'ng1/app/views/main.html',
@@ -22,7 +22,7 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  })
+  }])
   .config(['$translateProvider', function ($translateProvider) {
     $translateProvider.useStaticFilesLoader({
       prefix: 'i18/',

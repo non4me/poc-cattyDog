@@ -17,7 +17,7 @@ angular.module('demoApp')
         note: '=',
         notes: '='
       },
-      controller: function ($scope, $filter, $rootScope, notesAPI) {
+      controller: ['$scope', '$filter', '$rootScope', 'notesAPI', function ($scope, $filter, $rootScope, notesAPI) {
 
         var updateNote = function () {
           notesAPI.updateNote($scope.note.id, $scope.note.title).then(function (result) {
@@ -63,6 +63,6 @@ angular.module('demoApp')
             });
           }
         };
-      }
+      }]
     };
   });

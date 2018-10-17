@@ -15,7 +15,7 @@
         </button>
     </div>
 
-    <note-element notes="notes" note="note" ng-repeat="note in notes | orderBy:'-id'"></note-element>
+    <note-element [notes]="notes" [note]="note" ng-repeat="note in notes | orderBy:'-id'"></note-element>
 
     <div class="dblclick"><span class="glyphicon glyphicon-edit"></span> {{ 'dblclick' | translate }}</div>
 </div>

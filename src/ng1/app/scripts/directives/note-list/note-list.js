@@ -12,8 +12,7 @@ angular.module('demoApp')
     return {
       templateUrl: 'ng1/app/scripts/directives/note-list/note-list.html',
       restrict: 'E',
-      replace: true,
-      controller: function($scope, $rootScope, notesAPI) {
+      controller: ['$scope', '$rootScope', 'notesAPI', function($scope, $rootScope, notesAPI) {
         $rootScope.$emit('startLoading');
         $scope.isAddNew = false;
 
@@ -61,6 +60,6 @@ angular.module('demoApp')
             });
           }
         };
-      }
+      }]
     };
   });

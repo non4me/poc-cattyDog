@@ -13,7 +13,7 @@ angular.module('demoApp')
       templateUrl: 'ng1/app/scripts/directives/navigation/navigation.html',
       restrict: 'E',
       replace: true,
-      controller: function ($scope, $location) {
+      controller: ['$scope', '$location', function ($scope, $location) {
         var currentLocation = $location.path();
 
         $scope.$watch(function () {
@@ -26,6 +26,6 @@ angular.module('demoApp')
           $scope.page = url;
           $location.url(url);
         }
-      }
+      }]
     };
   });

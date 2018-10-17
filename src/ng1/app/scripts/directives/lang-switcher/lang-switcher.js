@@ -13,7 +13,7 @@ angular.module('demoApp')
       templateUrl: 'ng1/app/scripts/directives/lang-switcher/lang-switcher.html',
       restrict: 'E',
       replace: true,
-      controller: function($scope, $translate) {
+      controller: ['$scope', '$translate', function($scope, $translate) {
 
         $scope.changeLanguage = function (key) {
           $translate.use(key);
@@ -25,6 +25,6 @@ angular.module('demoApp')
         if($scope.defaultLanuage) {
           $scope.changeLanguage($scope.defaultLanuage);
         }
-      }
+      }]
     };
   });

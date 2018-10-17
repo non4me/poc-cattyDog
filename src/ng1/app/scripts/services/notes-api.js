@@ -10,7 +10,7 @@
  *
  */
 angular.module('demoApp')
-  .factory('notesAPI', function ($http) {
+  .factory('notesAPI', ['$http', function ($http) {
     var baseUrl = 'http://private-9aad-note10.apiary-mock.com';
 
     //TODO: Add validation
@@ -33,4 +33,4 @@ angular.module('demoApp')
         return $http.delete(baseUrl +'/notes/'+ id);
       }
     };
-  });
+  }]);

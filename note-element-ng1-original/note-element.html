@@ -1,0 +1,10 @@
+<div class="note-element" ng-dblclick="showEditor()">
+
+  <div class="del-btn pull-right" title="{{ 'del' | translate }}" ng-click="deleteNote()" ng-show="!isEdit">
+    <span class="glyphicon glyphicon-remove"></span>
+  </div>
+
+  <span class="title" ng-show="!isEdit">{{ note.title }}</span>
+
+  <textarea class="editor" ng-model="note.title" ng-keypress="catchEnter($event)" click-out="hideEditor()" ng-if="isEdit"></textarea>
+</div>
