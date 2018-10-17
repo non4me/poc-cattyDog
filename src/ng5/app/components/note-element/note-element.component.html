@@ -1,4 +1,4 @@
-<div class="note-element" ng-dblclick="showEditor()">
+<div class="note-element" (dblclick)="showEditor()">
 
   <div class="del-btn pull-right" title="{{ 'del' | translate }}" (click)="deleteNote()" *ngIf="!isEdit">
     <span class="glyphicon glyphicon-remove"></span>

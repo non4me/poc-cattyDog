@@ -1,8 +1,8 @@
-import { Component, ElementRef, EventEmitter, Inject, Injector, Input, OnInit } from '@angular/core';
-import { UpgradeComponent } from '@angular/upgrade/static';
+import { Component, Inject, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 import { NOTES_API_SERVICE } from '../../notesApi.service';
+import { ROOTSCOPE } from '../../rootScope.service';
 
 @Component({
   selector: 'note-element',
@@ -14,16 +14,13 @@ export class NoteElementComponent implements OnInit {
   @Input() note;
   @Input() notes;
 
-  $rootScope: EventEmitter<string>;
   isEdit = false;
 
   constructor(
-    elementRef: ElementRef,
-    injector: Injector,
     private translate: TranslateService,
-    @Inject(NOTES_API_SERVICE) private notesService: any) {
-
-    this.$rootScope = new EventEmitter();
+    @Inject(NOTES_API_SERVICE) private notesService: any,
+    @Inject(ROOTSCOPE) private $rootScope: any
+  ) {
 
     translate.setDefaultLang('en');
     translate.use('en');
@@ -57,11 +54,11 @@ export class NoteElementComponent implements OnInit {
   deleteNote() {
     const confirmMessage = this.translate.instant('del_confirm');
     if (window.confirm(confirmMessage)) {
-      this.$rootScope.emit('startLoading');
+      this.$rootScope.$emit('startLoading');
       this.notesService.deleteNote(this.note.id).then(
         (result) => {
           console.log(result);
-          this.$rootScope.emit('stopLoading');
+          this.$rootScope.$emit('stopLoading');
 
           // pseudo delete for demo task only!
           if (this.notes && this.notes.length) {
@@ -74,9 +71,8 @@ export class NoteElementComponent implements OnInit {
         },
         (error) => {
           console.log(error);
-          this.$rootScope.emit('stopLoading');
+          this.$rootScope.$emit('stopLoading');
         });
     }
   }
-
 }

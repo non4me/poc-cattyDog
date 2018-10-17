@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { NoteElementComponent } from './components/note-element/note-element.component';
 import { AppComponent } from './app.component';
 import { phoneServiceProvider } from './notesApi.service';
+import { rootscopeServiceProvider } from './rootScope.service';
 
 declare var angular: any;
 
@@ -39,7 +40,10 @@ const createTranslateLoader = (http: HttpClient) => new TranslateHttpLoader(http
     }),
     UpgradeModule
   ],
-  providers: [phoneServiceProvider],
+  providers: [
+    phoneServiceProvider,
+    rootscopeServiceProvider
+  ],
   entryComponents: [NoteElementComponent],
   bootstrap: [AppComponent],
   // schemas: [NO_ERRORS_SCHEMA]
